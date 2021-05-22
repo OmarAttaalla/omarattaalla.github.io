@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
+* {
+    background-color: #192852;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #192841;
+}
+
+nav {
+    background-color: #192841;
+}
+
+.topbar {
+    background-color: #192841;
+}
+
+.topbaritem,.sidebutton {
+    font-family: 'Archivo Narrow', sans-serif;
+    display: inline-block;
+    padding: 0px 40px;
+    list-style-type: none;
+    color: aliceblue;
+    background-color: #192841;
+}
+
+.logo {
+    cursor: pointer;
+    background-color: #192841;
+}
