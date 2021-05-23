@@ -35,9 +35,14 @@ nav {
     padding: 0px 40px;
     list-style-type: none;
     color: aliceblue;
-    background-color: #192841;
+    background-color: #192841;  
     cursor: pointer;
 }
+
+.topbaritem:hover {
+    background-color: #192855;
+}
+
 
 a {
     font-family: 'Archivo Narrow', sans-serif;
