@@ -20,28 +20,11 @@
 
         <main>
           <div class="MainTitle">Featured Projects</div>
-
-          <ul class = "GameContainerClosed" id="HeartBeatGameContainer">
-            <li class = "GameType"> <button class="DropDownDown" id="HeartBeat" onclick="DropDown(id)">^</button></li>
-          </ul>
+          
+          <a href="Projects/Sorting.html">Visual Sorting Algorithms</a>
 
           <div class="Divider"></div>
         </main>
   </body>
-
-  <script>
-    function DropDown(DropDownType){
-      console.log("Clicked")
-      if (document.getElementById(DropDownType).className == "DropDownDown") {
-        console.log("UP")
-        document.getElementById(DropDownType).setAttribute("class","DropDownUp");
-        document.getElementById(DropDownType + "GameContainer").setAttribute("class","GameContainerOpened");
-      } else {
-        console.log("DOWN")
-        document.getElementById(DropDownType).setAttribute("class","DropDownDown");
-        document.getElementById(DropDownType + "GameContainer").setAttribute("class","GameContainerClosed");
-      }
-    }
-  </script>
 
 </html>
