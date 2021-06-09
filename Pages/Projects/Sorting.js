@@ -59,7 +59,7 @@ function resolveAfter2Seconds(x) {
     return new Promise(resolve => {
         setTimeout(() => {
         resolve(x);
-        }, 1000);
+        }, 800);
     });
 }
 
