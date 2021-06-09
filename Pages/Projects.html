@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Omar Attaalla</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../C.png">
+  </head>
+  <body>
+        <header>
+            <a class = "logo" href="../index.html"><img class = "MainImage" src="../C.png" alt = "logo"></a>
+            <nav>
+                <ul class="topbar">
+                    <li class = "topbaritem" id = "Projects"> <a href="../index.html">Home</a> </li>
+                    <li class = "topbaritem"> <a href="Projects.html">Projects</a> </li>
+                    <li class = "topbaritem"> <a href="About.html">About</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+          <div class="MainTitle">Featured Projects</div>
+
+          <ul class = "GameContainerClosed" id="HeartBeatGameContainer">
+            <li class = "GameType"> <button class="DropDownDown" id="HeartBeat" onclick="DropDown(id)">^</button></li>
+          </ul>
+
+          <div class="Divider"></div>
+        </main>
+  </body>
+
+  <script>
+    function DropDown(DropDownType){
+      console.log("Clicked")
+      if (document.getElementById(DropDownType).className == "DropDownDown") {
+        console.log("UP")
+        document.getElementById(DropDownType).setAttribute("class","DropDownUp");
+        document.getElementById(DropDownType + "GameContainer").setAttribute("class","GameContainerOpened");
+      } else {
+        console.log("DOWN")
+        document.getElementById(DropDownType).setAttribute("class","DropDownDown");
+        document.getElementById(DropDownType + "GameContainer").setAttribute("class","GameContainerClosed");
+      }
+    }
+  </script>
+
+</html>

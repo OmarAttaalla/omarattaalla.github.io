@@ -1,0 +1,63 @@
+
+
+.BarHolder {
+    width: 80%;
+    margin:auto;
+    height: 500px;
+    background-color: #192841;
+    padding: 0px;
+}
+
+.SingleBar {
+    list-style-type: none;
+    width: 2.5%;
+    height: 400px;
+    border: 20px solid #192841;
+    display: inline-block;
+    background-color: aliceblue;
+}
+
+
+.ButtonHolder {
+    width: 80%;
+    margin:auto;
+    height: 100px;
+    background-color: #192841;
+    padding: 0px;
+    border: 1px solid aliceblue;
+    border-top-style: 1px solid aliceblue;
+    border-bottom-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+}
+
+.SortingButton {    
+    font-family: 'Archivo Narrow', sans-serif;
+    color: aliceblue;
+    background-color: black;
+    width: 20%;
+    height: 35px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 130%;
+    margin-left: 4%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: 2.5px solid aliceblue;
+ }
+
+ .SortingButton:hover {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: aliceblue;
+    background-color: gray;
+    width: 20%;
+    height: 35px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 130%;
+    margin-left: 4%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: 2.5px solid aliceblue;
+ }
+
