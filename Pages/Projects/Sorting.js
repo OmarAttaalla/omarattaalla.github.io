@@ -38,12 +38,20 @@ function ready() {
 
         if (AllSticks.length < 19) {
             if (InputElement.value > 0 && InputElement.value <= 400) {
-                var NewStick = document.createElement("li")
+                let NewStick = document.createElement("li")
                 var BarHolder = document.getElementById("BarHolder")
 
                 NewStick.classList.add("SingleBar")
                 NewStick.style.height = InputElement.value + "px"
                 BarHolder.append(NewStick)
+
+                NewStick.addEventListener("click", function(event) {
+                    if (Sorting == true) {return}
+        
+                    NewStick.remove()
+
+                    console.log("Removed")
+                })
             }
         }
     })
@@ -170,13 +178,21 @@ async function InsertionSort () {
 function AddRandomSticks () {
     var AllSticks = document.getElementsByClassName("SingleBar")
     while (AllSticks.length < 19) {
-        var NewStick = document.createElement("li")
+        let NewStick = document.createElement("li")
         var BarHolder = document.getElementById("BarHolder")
         var RandomHeight = 400 - Math.floor(Math.random() * 400)
 
         NewStick.classList.add("SingleBar")
         NewStick.style.height = RandomHeight + "px"
         BarHolder.append(NewStick)
+
+        NewStick.addEventListener("click", function(event) {
+            if (Sorting == true) {return}
+
+            NewStick.remove()
+            
+            console.log("Removed")
+        })
     }
 }
 
