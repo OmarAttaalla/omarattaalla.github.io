@@ -121,8 +121,8 @@ a {
 }
 
 .Divider {
-    width: 80%;
-    height: 5px;
+    width: 20%;
+    height: 2px;
     background-color: aliceblue;
     margin: auto;
     outline: none;
@@ -149,4 +149,34 @@ main {
 
 b {
     font-family: 'Archivo Narrow', sans-serif;
+}
+
+.Project {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: aliceblue;
+    background-color: #192852;
+    width: 100%;
+    height: 70px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 150%;
+    margin-left: 15%;
+    text-decoration: underline;
+}
+
+.ProjectInfo {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+}
+
+.Info {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: aliceblue;
+    background-color: #192852;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 120%;
+    margin-left: 15%;
 }

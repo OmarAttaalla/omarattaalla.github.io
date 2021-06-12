@@ -174,6 +174,65 @@ async function InsertionSort () {
     Sorting = false;
 }
 
+async function QuickSort() {
+    if(i >= k){
+        return;
+    }
+    const AllSticks = document.getElementsByClassName("SingleBar")
+
+    let pivot = medianOfThree(AllSticks[i], AllSticks[(i+k)/2], AllSticks[k]);
+    let lowIndex = i;
+    let highIndex = k;
+    let done = false;
+
+    while(!done){
+        while(AllSticks[lowIndex] < pivot){
+            lowIndex += 1;
+        }
+        while(pivot < AllSticks[highIndex]){
+            highIndex -= 1;
+        }
+        if(lowIndex >= highIndex){
+            done = true;
+        }
+        else{
+            swap(AllSticks[lowIndex],AllSticks[highIndex]);
+            lowIndex += 1;
+            highIndex -= 1;
+        }
+    }
+
+
+    Quicksort_medianOfThree(AllSticks, i, highIndex);
+    Quicksort_medianOfThree(AllSticks, highIndex + 1, k);
+}
+
+
+function medianOfThree(first,middle,last){
+    if (roughScale(first.style.height,10) > roughScale(middle.style.height,10)) {
+		if (roughScale(middle.style.height,10) > roughScale(last.style.height,10)) {
+			return middle;
+		}
+		else if (roughScale(first.style.height,10) > roughScale(last.style.height,10)) {
+			return last;
+		}
+		else {
+			return first;
+		}
+	}
+	else {
+		if (roughScale(first.style.height,10) > roughScale(last.style.height,10)) {
+			return first;
+		}
+		else if (roughScale(middle.style.height,10) > roughScale(last.style.height,10)) {
+			return last;
+		}
+		else {
+			return middle;
+		}
+	}
+}
+
 
 function AddRandomSticks () {
     var AllSticks = document.getElementsByClassName("SingleBar")
