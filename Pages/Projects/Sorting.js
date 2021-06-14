@@ -27,8 +27,9 @@ function ready() {
     var AddStickButton = document.getElementById("AddButton")
     var InputElement = document.getElementById("HeightInput")
     var SelectionSortButton = document.getElementById("SelectionSort")
-    var AllSticks = document.getElementsByClassName("SingleBar")
     var InsertionSortButton = document.getElementById("InsertionSort")
+    var QuickSortButton = document.getElementById("QuickSort")
+    var AllSticks = document.getElementsByClassName("SingleBar")
     var AddRandomSticksButton = document.getElementById("AddRandomize")
 
     AllSticks[0].style.height = "400px"
@@ -50,7 +51,6 @@ function ready() {
         
                     NewStick.remove()
 
-                    console.log("Removed")
                 })
             }
         }
@@ -61,11 +61,21 @@ function ready() {
     })
 
     SelectionSortButton.addEventListener("click",function(event) {
+        Comparisons = 0
+        UpdateData()
         SelectionSort()
     })
 
     InsertionSortButton.addEventListener("click",function(event) {
+        Comparisons = 0
+        UpdateData()
         InsertionSort()
+    })
+
+    QuickSortButton.addEventListener("click", function(event) {
+        Comparisons = 0
+        UpdateData()
+        QuickSort(0,document.getElementsByClassName("SingleBar").length - 1)
     })
 
 
@@ -82,11 +92,18 @@ function resolveAfterTime(x) {
     });
 }
 
-function roughScale(x, base) {
-    const parsed = parseInt(x, base);
+function PixelsToNum(x) {
+    const parsed = parseInt(x, 10);
     if (isNaN(parsed)) { return 0; }
     return parsed;
-  }
+}
+
+function UpdateData () {
+    ComparisonHolder = document.getElementById("Comparisons")
+    ComparisonHolder.innerHTML = "# of Comparisons: " + Comparisons
+}
+
+var Comparisons = 0;
   
 async function SelectionSort() {
     if (Sorting == true) { return}
@@ -101,9 +118,9 @@ async function SelectionSort() {
         var SmallestElement = AllSticks[i]
 
         for (var g = i + 1; g < AllSticks.length; ++g) {
-            if (roughScale(AllSticks[g].style.height,10) < roughScale(SmallestElement.style.height,10)) {
-                console.log("G Height: " + AllSticks[g].style.height)
-                console.log("Smallest Height: " + SmallestElement.style.height)
+            ++Comparisons
+            UpdateData()
+            if (PixelsToNum(AllSticks[g].style.height) < PixelsToNum(SmallestElement.style.height)) {
                 if (SmallestElement !== AllSticks[i]) {
                     SmallestElement.style.backgroundColor = "aliceblue"
                 }
@@ -145,8 +162,13 @@ async function InsertionSort () {
         await resolveAfterTime();
 
         //Check element to the left of g, seeing if it is smaller. If so, swap them
-        while (g >= 0 ) {
-            if ( g >= 1 && roughScale(AllSticks[g].style.height,10) < roughScale(AllSticks[g - 1].style.height,10)) {
+        let checked = false
+
+        while (g >= 0) {
+            if ( g >= 1 && PixelsToNum(AllSticks[g].style.height) < PixelsToNum(AllSticks[g - 1].style.height)) {
+                ++Comparisons
+                UpdateData()
+                console.log(Comparisons)
                 AllSticks[g].style.backgroundColor = "yellow"
                 AllSticks[g - 1].style.backgroundColor = "yellow"
                 await resolveAfterTime();
@@ -160,6 +182,11 @@ async function InsertionSort () {
                 await resolveAfterTime();
             } else {
                 AllSticks[g].style.backgroundColor = "green"
+                if (checked == false) {
+                    checked = true
+                    ++Comparisons
+                    UpdateData()
+                }
             }
             --g
         }
@@ -174,64 +201,81 @@ async function InsertionSort () {
     Sorting = false;
 }
 
-async function QuickSort() {
-    if(i >= k){
-        return;
-    }
+var PreviousPivot;
+
+async function QuickSort(low, high) {
+    Sorting = true
+
     const AllSticks = document.getElementsByClassName("SingleBar")
 
-    let pivot = medianOfThree(AllSticks[i], AllSticks[(i+k)/2], AllSticks[k]);
-    let lowIndex = i;
-    let highIndex = k;
-    let done = false;
+    ++Comparisons
+    UpdateData()
+    if (low < high) {
+        let pivot = await Partition(low, high);
 
-    while(!done){
-        while(AllSticks[lowIndex] < pivot){
-            lowIndex += 1;
+        if (PreviousPivot) {
+            PreviousPivot.style.backgroundColor = "aliceblue"
         }
-        while(pivot < AllSticks[highIndex]){
-            highIndex -= 1;
-        }
-        if(lowIndex >= highIndex){
-            done = true;
-        }
-        else{
-            swap(AllSticks[lowIndex],AllSticks[highIndex]);
-            lowIndex += 1;
-            highIndex -= 1;
+
+        AllSticks[pivot].style.backgroundColor = "black"
+
+        PreviousPivot = AllSticks[pivot]
+
+        await resolveAfterTime();
+ 
+        await QuickSort(low, pivot - 1);
+        await QuickSort(pivot + 1, high);
+
+        Sorting = false
+    }
+
+}
+
+
+async function Partition(low,high) {
+    const AllSticks = document.getElementsByClassName("SingleBar")
+
+    pivot = AllSticks[high]
+    i = (low - 1);
+
+    let Traversed = []
+ 
+    for (let j = low; j <= high - 1; j++) {
+        AllSticks[j].style.backgroundColor = "yellow";
+        Traversed.push(AllSticks[j])
+        await resolveAfterTime();
+        ++Comparisons
+        UpdateData()
+        if (PixelsToNum(AllSticks[j].style.height) < PixelsToNum(pivot.style.height)) {
+            i++;
+            AllSticks[i].style.backgroundColor = "green";
+            AllSticks[j].style.backgroundColor = "green";
+
+            Traversed.push(AllSticks[j])
+            Traversed.push(AllSticks[i])
+
+            await resolveAfterTime();
+
+            let first = AllSticks[i].style.height
+            AllSticks[i].style.height = AllSticks[j].style.height
+            AllSticks[j].style.height = first
+            await resolveAfterTime();
         }
     }
 
+    let first = AllSticks[i + 1].style.height
+    AllSticks[i + 1].style.height = AllSticks[high].style.height
+    AllSticks[high].style.height = first
 
-    Quicksort_medianOfThree(AllSticks, i, highIndex);
-    Quicksort_medianOfThree(AllSticks, highIndex + 1, k);
+    await resolveAfterTime();
+
+    for (let i = 0; i < Traversed.length; ++i) {
+        Traversed[i].style.backgroundColor = "aliceblue"
+    }
+
+    return (i + 1);
 }
 
-
-function medianOfThree(first,middle,last){
-    if (roughScale(first.style.height,10) > roughScale(middle.style.height,10)) {
-		if (roughScale(middle.style.height,10) > roughScale(last.style.height,10)) {
-			return middle;
-		}
-		else if (roughScale(first.style.height,10) > roughScale(last.style.height,10)) {
-			return last;
-		}
-		else {
-			return first;
-		}
-	}
-	else {
-		if (roughScale(first.style.height,10) > roughScale(last.style.height,10)) {
-			return first;
-		}
-		else if (roughScale(middle.style.height,10) > roughScale(last.style.height,10)) {
-			return last;
-		}
-		else {
-			return middle;
-		}
-	}
-}
 
 
 function AddRandomSticks () {
@@ -250,7 +294,6 @@ function AddRandomSticks () {
 
             NewStick.remove()
             
-            console.log("Removed")
         })
     }
 }

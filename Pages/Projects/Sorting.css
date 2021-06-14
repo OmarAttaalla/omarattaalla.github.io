@@ -13,7 +13,7 @@
     height: 400px;
     display: inline-block;
     background-color: aliceblue;
-    transition: height 1s,background-color 1s;
+    transition: height 0.8s,background-color 0.8s;
     padding: 0px;
     margin-left: 2.5%;
     margin-top: 3%;
@@ -26,7 +26,7 @@
     height: 400px;
     display: inline-block;
     background-color: gray;
-    transition: height 1s,background-color 1s;
+    transition: height 0.8s,background-color 0.8s;
     cursor: pointer;
     padding: 0px;
     margin-left: 2.5%;
@@ -76,7 +76,7 @@
     height: 35px;
     line-height: 25px;
     text-align: center;
-    font-size: 130%;
+    font-size: 1.3em;
     margin-left: 5%;
     margin-top: 2%;
     border-radius: 10px;
@@ -91,7 +91,7 @@
     height: 35px;
     line-height: 25px;
     text-align: center;
-    font-size: 130%;
+    font-size: 1.3em;
     margin-left: 5%;
     margin-top: 2%;
     border-radius: 10px;
@@ -106,7 +106,7 @@
     margin-top: 50%;
     height: 50px;
     line-height: 50px;
-    font-size: 150%;
+    font-size: 1.5em;
 }
 
 .HeightInput {
@@ -118,7 +118,7 @@
     height: 35px;
     line-height: 25px;
     text-align: center;
-    font-size: 130%;
+    font-size: 1.3em;
 }
 
 .SortingButton {    
@@ -129,7 +129,7 @@
     height: 35px;
     line-height: 25px;
     text-align: center;
-    font-size: 130%;
+    font-size: 1.3em;
     margin-left: 4%;
     margin-top: 2%;
     border-radius: 10px;
@@ -144,11 +144,39 @@
     height: 35px;
     line-height: 25px;
     text-align: center;
-    font-size: 130%;
+    font-size: 1.3em;
     margin-left: 4%;
     margin-top: 2%;
     border-radius: 10px;
     border: 2.5px solid aliceblue;
     cursor: pointer;
  }
+
+
+ .Data {
+    width: 80%;
+    margin:auto;
+    height: 100px;
+    background-color: #192841;
+    padding: 0px;
+    border: 1px solid aliceblue;
+    border-top-style: 1px solid aliceblue;
+    border-bottom-style: 1px solid aliceblue;
+    border-right-style: hidden;
+    border-left-style: hidden;
+}
+
+.DataMember {
+    width: 50%;
+    margin-top: 2.5%;
+    height: 10px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: aliceblue;
+    font-size: 1.5em;
+    background-color: #192841;
+    padding: 0px;
+    margin-left: 5%;
+}
+
+
 
