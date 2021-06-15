@@ -155,7 +155,7 @@ b {
     font-family: 'Archivo Narrow', sans-serif;
     color: aliceblue;
     background-color: #192852;
-    width: 100%;
+    width: 80%;
     height: 70px;
     line-height: 4;
     text-align: center;
@@ -166,7 +166,7 @@ b {
 
 .ProjectInfo {
     margin: auto;
-    width: 100%;
+    width: 80%;
     height: 200px;
 }
 
@@ -174,7 +174,7 @@ b {
     font-family: 'Archivo Narrow', sans-serif;
     color: aliceblue;
     background-color: #192852;
-    width: 100%;
+    width: 80%;
     height: 70px;
     line-height: 1;
     font-size: 1.3em;

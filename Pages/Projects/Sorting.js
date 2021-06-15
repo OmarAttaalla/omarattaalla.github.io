@@ -85,7 +85,7 @@ function ready() {
 
 function resolveAfterTime(x) {
     if (!x){ x = 800}
-    return new Promise(resolve => {
+    return new Promise(resolve => { 
         setTimeout(() => {
         resolve(x);
         }, x);
