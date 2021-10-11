@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Omar Attaalla</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="Sorting.css">
+    <link rel="icon" href="../../../C.png">
+    <script src="Sorting.js" async></script>
+  </head>
+  <body>
+        <header>
+            <a class = "logo" href="../../../index.html"><img class = "MainImage" src="../../../C.png" alt = "logo"></a>
+            <nav>
+                <ul class="topbar">
+                    <li class = "topbaritem" id = "Projects"> <a href="../../../index.html">Home</a> </li>
+                    <li class = "topbaritem"> <a href="../../Projects.html">Projects</a> </li>
+                    <li class = "topbaritem"> <a href="../../About.html">About</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+          <div class="MainTitle">Visual Sorting Algorithms</div>
+
+          <div class="ButtonHolderTop">
+            <button class ="AddButton" id="AddRandomize">Add Random Sticks</button>
+            <label class = "SizeLabel">Height(1-400): </label>
+            <input type="text" class ="HeightInput" id="HeightInput"></input>
+            <button class ="AddButton" id="AddButton">Add Stick</button>
+          </div>
+
+          <ul class = "BarHolder" id="BarHolder"> 
+            <li class = "SingleBar"></li>
+          </ul>
+
+          <div class="ButtonHolder">
+            <button class = "SortingButton" id="SelectionSort">Start Selection Sort</button>
+            <button class = "SortingButton" id="InsertionSort">Start Insertion Sort</button>
+            <button class = "SortingButton">Start Merge Sort</button>
+            <button class = "SortingButton" id="QuickSort">Start QuickSort</button>
+          </div>
+
+          <div class="Data">
+            <div class ="DataMember" id="Comparisons"># of Comparisons: 0</div>
+          </div>
+        </main>
+  </body>
+
+</html>

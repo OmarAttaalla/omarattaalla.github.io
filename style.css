@@ -180,3 +180,75 @@ b {
     font-size: 1.3em;
     margin-left: 15%;
 }
+
+.MainContainer {
+    width: 100%;
+    height: 300px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: aliceblue;
+    line-height: 150px;
+    font-size: 150px;
+    Text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.SkillsTitle {
+    width: 100%;
+    height: 100px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: black;
+    line-height: 100px;
+    font-size: 100px;
+    Text-align: center;
+    top: 100px;
+    margin-bottom: 100px;
+    background-color: aliceblue;
+    position: relative;
+
+}
+
+.SkillsDiv {
+    width: 100%;
+    height: 700px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: aliceblue;
+    line-height: 100px;
+    font-size: 100px;
+    Text-align: center;
+    margin-top: 100px;
+    background-color: aliceblue;
+}
+
+.SkillsContainer {
+    width: 100%;
+    height: 400px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: aliceblue;
+    display: inline-block;
+    margin-top: 100px;
+    background-color: aliceblue;
+}
+
+.SkillsItem {
+    width: 10%;
+    height: 200px;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+}
+
+.ProjectsMainTitle {
+    background-color: #192852;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 100px;
+    position: relative;
+    margin-top: 100px;
+    color: aliceblue;
+    display: block;
+}
