@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
 
 * {
-    background-color: #192852;
+    background-color: #254B62;
 }
 
 header {
@@ -13,18 +13,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: #192841;
+    background-color: #1D3E53;
     height: 10px;
     z-index: 100;
 }
 
 
 nav {
-    background-color: #192841;
+    background-color: #1D3E53;
 }
 
 .topbar {
-    background-color: #192841;
+    background-color: #1D3E53;
     align-items: center;
     justify-content: space-between;
     position: static;
@@ -36,12 +36,12 @@ nav {
     padding: 0px 40px;
     list-style-type: none;
     color: aliceblue;
-    background-color: #192841;  
+    background-color: #1D3E53;  
     cursor: pointer;
 }
 
 .topbaritem:hover {
-    background-color: #192855;
+    cursor: pointer;
 }
 
 .GameContainerOpened {
@@ -75,14 +75,14 @@ a {
     font-family: 'Archivo Narrow', sans-serif;
     color: aliceblue;
     text-decoration: none;
-    background-color: #192841;
+    background-color: #1D3E53;
 }
 
 .DropDownDown {
     transform: rotate(180deg);
     border-radius: 12px;
     color: aliceblue;
-    background-color: #192841;
+    background-color: #1D3E53;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
@@ -98,7 +98,7 @@ a {
     transform: rotate(0deg);
     border-radius: 12px;
     color: aliceblue;
-    background-color: #192841;
+    background-color: #1D3E53;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
@@ -123,7 +123,7 @@ a {
 .Divider {
     width: 20%;
     height: 2px;
-    background-color: aliceblue;
+    background-color: #476D7C;
     margin: auto;
     outline: none;
 }
@@ -136,7 +136,7 @@ main {
 
 .logo {
     cursor: pointer;
-    background-color: #192841;
+    background-color: #1D3E53;
     width: 40px;
     height: 40px;
     position: relative;
@@ -144,7 +144,7 @@ main {
 }
 
 .MainImage {
-    background-color: #192841;
+    background-color: #1D3E53;
 }
 
 b {
@@ -154,7 +154,7 @@ b {
 .Project {
     font-family: 'Archivo Narrow', sans-serif;
     color: aliceblue;
-    background-color: #192852;
+    background-color: #254B62;
     width: 80%;
     height: 70px;
     line-height: 4;
@@ -173,7 +173,7 @@ b {
 .Info {
     font-family: 'Archivo Narrow', sans-serif;
     color: aliceblue;
-    background-color: #192852;
+    background-color: #254B62;
     width: 80%;
     height: 70px;
     line-height: 1;
@@ -203,7 +203,7 @@ b {
     Text-align: center;
     top: 100px;
     margin-bottom: 100px;
-    background-color: aliceblue;
+    background-color: #476D7C;
     position: relative;
 
 }
@@ -217,7 +217,7 @@ b {
     font-size: 100px;
     Text-align: center;
     margin-top: 100px;
-    background-color: aliceblue;
+    background-color: #476D7C;
 }
 
 .SkillsContainer {
@@ -227,7 +227,7 @@ b {
     color: aliceblue;
     display: inline-block;
     margin-top: 100px;
-    background-color: aliceblue;
+    background-color: #476D7C;
 }
 
 .SkillsItem {
@@ -235,11 +235,11 @@ b {
     display: inline-block;
     left: 0;
     right: 0;
-    background-color: aliceblue;
+    background-color: #476D7C;
 }
 
 .ProjectsMainTitle {
-    background-color: #192852;
+    background-color: #254B62;
     width: 100%;
     text-align: center;
     height: 100px;
