@@ -189,8 +189,9 @@ b {
     line-height: 150px;
     font-size: 150px;
     Text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    border-top: 100px solid #191919;
+    border-bottom: 100px solid #191919;
+    background-color: #191919;
 }
 
 .SkillsTitle {
@@ -201,10 +202,11 @@ b {
     line-height: 100px;
     font-size: 100px;
     Text-align: center;
-    top: 100px;
+    top: 206px;
     margin-bottom: 100px;
     background-color: #333333;
-    position: relative;
+    position: absolute;
+
 
 }
 
@@ -216,8 +218,9 @@ b {
     line-height: 100px;
     font-size: 100px;
     Text-align: center;
-    margin-top: 100px;
+    border-top: 110px solid #191919;
     background-color: #333333;
+    position: relative;
 }
 
 .SkillsContainer {
@@ -226,7 +229,7 @@ b {
     font-family: 'Archivo Narrow', sans-serif;
     color: aliceblue;
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 286px;
     background-color: #333333;
 }
 
@@ -239,17 +242,38 @@ b {
 }
 
 .ProjectsMainTitle {
-    background-color: #191919;
+    background-color: #333333;
     width: 100%;
     text-align: center;
-    height: 100px;
+    height: 400px;
     text-decoration: none;
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 100px;
     position: relative;
-    margin-top: 100px;
     color: aliceblue;
     display: block;
+}
+
+.custom-shape-divider-top-1638130578 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #333333;
+}
+
+.custom-shape-divider-top-1638130578 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 206px;
+    background-color: #333333;
+}
+
+.custom-shape-divider-top-1638130578 .shape-fill {
+    fill: #191919;
 }
 
 
