@@ -1,14 +1,22 @@
+let observationDict = {
+    "SkillAnimations": "SkillAnimationsAnim",
+    "FrontTitle": "FrontTitleAnimation",
+    "personImage": "personImageAnimation"
+}
+
 //create observer object
 const observer = new IntersectionObserver(elements => {
     elements.forEach(element => {
         if (element.isIntersecting) {
-            element.target.classList.add("SkillAnimationsAnim");
+            element.target.classList.add(observationDict[element.target.id]);
         } else {
-            element.target.classList.remove("SkillAnimationsAnim");
+            element.target.classList.remove(observationDict[element.target.id]);
         }
     });
 });
 
 //observe SkillAnimations element
-observer.observe(document.getElementById("SkillAnimations"));
+for (const [key, value] of Object.entries(observationDict)) {
+    observer.observe(document.getElementById(key));
+}
 

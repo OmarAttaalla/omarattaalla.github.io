@@ -4,44 +4,54 @@
     background-color: #191919;
 }
 
+b {
+    background-color: transparent;
+}
+
 header {
     display: flex;
     position: fixed;
     width: 100%;
     top: 0;
     right: 0;
+    left: 0;
+    bottom: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
     background-color: #000000;
-    height: 10px;
+    height: 70px;
     z-index: 100;
 }
 
 
-nav {
-    background-color: #000000;
-}
-
 .topbar {
+    width: 50%;
+    height: 70px;
     background-color: #000000;
-    align-items: center;
-    justify-content: space-between;
-    position: static;
+    position: sticky;
+    right: 5%;
+    text-align: right;
 }
 
 .topbaritem {
     font-family: 'Archivo Narrow', sans-serif;
     display: inline-block;
-    padding: 0px 40px;
     list-style-type: none;
     color: aliceblue;
-    background-color: #000000;  
+    background-color: transparent;  
     cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 10%;
+    margin-top: 15px;
 }
+
 
 .topbaritem:hover {
     cursor: pointer;
+    border-bottom: 3px solid whitesmoke;
 }
 
 .GameContainerOpened {
@@ -140,11 +150,13 @@ main {
     width: 40px;
     height: 40px;
     position: relative;
-    left: 20%;
+    left: 10%;
 }
 
 .MainImage {
-    background-color: #000000;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
 }
 
 b {
@@ -261,8 +273,6 @@ b {
     }
 }
 
-
-
 .ProjectsMainTitle {
     background-color: #333333;
     width: 40%;
@@ -328,4 +338,74 @@ b {
     width: 384px;
 }
 
+.personImage {
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+    transform: translateX(-50%);
+    opacity: 0;
+}
 
+.custom-shape-divider-top-1643936681 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1643936681 svg {
+    position: relative;
+    display: block;
+    width: calc(170% + 1.3px);
+    height: 434px;
+}
+
+.custom-shape-divider-top-1643936681 .shape-fill {
+    fill: #333333;
+}
+
+
+.FrontTitle {
+    position: absolute;
+    z-index: 1;
+    top: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    font-size: 4vw;
+    color: whitesmoke;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.FrontTitleAnimation {
+    animation: up-transparent 0.5s ease-in-out forwards;
+}
+
+.personImageAnimation {
+    animation: left-right-transparent 0.5s ease-in-out forwards;
+}
+
+@keyframes up-transparent {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes left-right-transparent {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
