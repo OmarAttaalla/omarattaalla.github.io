@@ -119,6 +119,10 @@ a {
     padding: 32px 16px;
 }
 
+.main {
+    overflow: hidden;
+}
+
 .MainTitle {
     font-family: 'Archivo Narrow', sans-serif;
     color: aliceblue;
@@ -457,4 +461,82 @@ b {
 .AboutText {
     width: 100%;
     background-color: transparent;
+}
+
+.custom-shape-divider-bottom-1644003976 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1644003976 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 447px;
+}
+
+.custom-shape-divider-bottom-1644003976 .shape-fill {
+    fill: #000000;
+}
+
+.githubImage {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    background-color: transparent;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.githubholder {
+    transform: rotate(0);
+    position: absolute;
+    top: 40%;
+    background-color: transparent;
+    border-radius: 10%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100px;
+}
+
+.ContactHolder {
+    position: relative;
+    background-color: transparent;
+}
+
+.ContactTitle {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    color: whitesmoke;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 70px;
+    top: 10%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.Contactmethod {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: whitesmoke;
 }
