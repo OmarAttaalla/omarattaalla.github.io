@@ -1,0 +1,10 @@
+.SubSection {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+   width: 300px; 
+}
