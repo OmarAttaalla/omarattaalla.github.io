@@ -37,8 +37,8 @@
 }
 
 .SubInfo {
-    font-weight: lighter;
-    color: gray;
+    font-weight: 500;
+    color: rgb(94, 94, 94);
     list-style-type: circle;
     text-align: left;
     margin-left: 10%;

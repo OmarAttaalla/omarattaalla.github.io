@@ -1,6 +1,29 @@
-.SubSection {
-    background-color: transparent;
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.TechSubSection {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fbfbfb;
+    box-shadow: 0 2px 4px #c9c9c9;
+    width: 100%;
+    column-gap: 30px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.TechAnimation {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.TechObject {
+    height: 150px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }

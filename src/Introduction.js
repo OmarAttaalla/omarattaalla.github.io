@@ -1,5 +1,5 @@
 import React from "react";
-import PersonImage from './person.png'
+import PersonImage from './images/person.png'
 import "./Introduction.css"
 
 export default function Introduction() {

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    margin-top: 10px;
 }
 
 .SubHeader {
