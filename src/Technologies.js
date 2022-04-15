@@ -8,6 +8,8 @@ import ExpressImage from './images/express.png'
 import ReactImage from './images/React.png'
 import LuaImage from './images/Lua.png'
 import JsImage from './images/javascript.png'
+import CssImage from './images/css.png'
+import HtmlImage from './images/html.png'
 
 export default function Technologies() {
     const javascriptImage = useRef(null)
@@ -30,11 +32,13 @@ export default function Technologies() {
         <div className="TechSubSection">
             <img className="TechObject" src={CppImage}></img>
             <img className="TechObject" src={PythonImage}></img>
-            <img className="TechObject" src={NodejsImage}></img>
-            <img className="TechObject" src={JsImage}></img>
-            <img className="TechObject" src={ExpressImage}></img>
-            <img className="TechObject" src={ReactImage}></img>
             <img className="TechObject" src={LuaImage}></img>
+            <img className="TechObject" src={NodejsImage}></img>
+            <img className="TechObject" src={ExpressImage}></img>
+            <img className="TechObject" src={JsImage}></img>
+            <img className="TechObject" src={HtmlImage}></img>
+            <img className="TechObject" src={CssImage}></img>
+            <img className="TechObject" src={ReactImage}></img>
         </div>
     )
 }
