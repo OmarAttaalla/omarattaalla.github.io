@@ -1,26 +1,16 @@
 import React from "react";
 import "./About.css"
-import UCRImage from './images/UCR.png'
+import Education from "./Education"
+import Experience from "./Experience"
+import Projects from "./Projects"
 
 export default function About() {
 
     return (
         <div className="AboutSubSection">
-            <div className="Title">Education</div>
-            <div className="BoxContainer">
-                <img className="UCRImage" src={UCRImage}></img>
-                <div className="BoxTitle">
-                    University of California, Riverside
-                    <br/>
-                    <li className="CompEng">B.S. Computer Engineering</li>
-                    <ul className="SubInfo">
-                        <li>Data Structures and Algorithms</li>
-                        <li className="subSubInfo">Arrays, Stacks, Queues, Heaps, Hash Tables, Trees, Graphs</li>
-                        <li>Software Construction</li>
-                        <li className="subSubInfo">Git, GitHub, GitFlow, Continuous Integration, Design Patterns </li>
-                    </ul>
-                </div>
-            </div>
+            <Education />
+            <Experience />
+            <Projects />
         </div>
     )
 }
