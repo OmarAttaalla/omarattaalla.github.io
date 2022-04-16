@@ -4,6 +4,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .IntroGrid {
     display: grid;
     grid-template-columns: 100%;

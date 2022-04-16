@@ -1,12 +1,13 @@
 import React from "react";
 import "./Projects.css"
 import ChessImage from "./images/Chess.png"
+import SortImage from "./images/Sort.png"
 
 export default function Projects() {
 
     return (
         <>
-            <div className="Title">Projects</div>
+            <div className="Title" id="Projects">Projects</div>
             <div className="BoxContainer">
                 <div className="BoxTitle" id="ExpBox">
                     <a className = "ProjectLink" href="https://receipthelpmanage.herokuapp.com/" target={"_blank"}>Receipt Manager Web App</a>
@@ -28,6 +29,17 @@ export default function Projects() {
                     </ul>
                 </div>
                 <img id="ChessImage" src={ChessImage}></img>
+            </div>
+            <div className="BoxContainer">
+                <div className="BoxTitle">
+                    <a href="../public/Sorting.html" target={"_blank"}>Visual Sorting Algorithms</a>
+                    <br/>
+                    <ul className="SubInfo">
+                        <li>This Project includes visual representations of the most popular sorting algorithms (Selection Sort, Insertion Sort, Merge Sort, Quicksort)</li>
+                        <li>The visuals are created using vanilla Javascript with HTML/CSS</li>
+                    </ul>
+                </div>
+                <img id="SortImage" src={SortImage}></img>
             </div>
         </>
     )

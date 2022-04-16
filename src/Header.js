@@ -10,7 +10,7 @@ export default function Header() {
             </div>
             <div className="SubHeader NavigationHeader">
                 <a className="NavItem" href="./">Home</a>
-                <a className="MainNavItem" href="./">Projects</a>
+                <a className="MainNavItem" href="#Projects">Projects</a>
             </div>
         </header>
     )
