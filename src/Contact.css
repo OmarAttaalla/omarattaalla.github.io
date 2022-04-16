@@ -1,0 +1,18 @@
+#ContactContainer {
+    background-color: #fbfbfb;
+    gap: 20px;
+}
+
+#ContactTitle {
+    font-size: 30px;
+    padding-top: 20px;
+    margin-left: 0;
+}
+
+.ContactItem {
+    width: 40px;
+}
+
+.ContactImage {
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.IntroGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(0px, auto);
+    grid-auto-columns: minmax(0px, 500px);
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 20px;
+    background-color: transparent;
+}
