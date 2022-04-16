@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/omarattaalla.me/static/css/main.46c372f0.css",
+    "main.js": "/omarattaalla.me/static/js/main.951a1333.js",
+    "static/media/person.png": "/omarattaalla.me/static/media/person.ad2f6e58ad195fd65783.png",
+    "static/media/html.png": "/omarattaalla.me/static/media/html.87ec4ca091a507e14a7f.png",
+    "static/media/React.png": "/omarattaalla.me/static/media/React.73dbb5bcec516da82694.png",
+    "static/media/python.png": "/omarattaalla.me/static/media/python.f0c9d64775aac23759fe.png",
+    "static/media/UCR.png": "/omarattaalla.me/static/media/UCR.3dca199a7750ac4154c0.png",
+    "static/media/Lua.png": "/omarattaalla.me/static/media/Lua.e7a9c3d278f97ae7775a.png",
+    "static/media/Cpp.png": "/omarattaalla.me/static/media/Cpp.0a81196c8995a6248ba3.png",
+    "static/media/Chess.png": "/omarattaalla.me/static/media/Chess.518398067afc8eb87994.png",
+    "static/media/NN.png": "/omarattaalla.me/static/media/NN.ae0e9bfa40b69a70e7f1.png",
+    "static/media/Nodejs.png": "/omarattaalla.me/static/media/Nodejs.abfaef34ea49d0c7cd3c.png",
+    "static/media/css.png": "/omarattaalla.me/static/media/css.0c2690a25c4bec03822a.png",
+    "static/media/express.png": "/omarattaalla.me/static/media/express.cca64e0f360897258ecb.png",
+    "static/media/Sort.png": "/omarattaalla.me/static/media/Sort.7f2d2b905e4ac178960a.png",
+    "index.html": "/omarattaalla.me/index.html",
+    "main.46c372f0.css.map": "/omarattaalla.me/static/css/main.46c372f0.css.map",
+    "main.951a1333.js.map": "/omarattaalla.me/static/js/main.951a1333.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46c372f0.css",
+    "static/js/main.951a1333.js"
+  ]
+}
