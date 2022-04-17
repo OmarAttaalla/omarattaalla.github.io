@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Technologies.css"
 //import lottie from 'lottie-web'
 import CppImage from './images/Cpp.png'
@@ -12,33 +12,17 @@ import CssImage from './images/css.png'
 import HtmlImage from './images/html.png'
 
 export default function Technologies() {
-    const javascriptImage = useRef(null)
-
-    /*
-    useEffect(() => {
-        lottie.loadAnimation({
-            container: javascriptImage.current,
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            animationData: require('./90466-javascript-logo.json')
-        })
-    })
-    */
-
-    //<div className="TechAnimation" ref={javascriptImage}></div>
-
     return (
         <div className="TechSubSection">
-            <img className="TechObject" src={CppImage}></img>
-            <img className="TechObject" src={PythonImage}></img>
-            <img className="TechObject" src={LuaImage}></img>
-            <img className="TechObject" src={NodejsImage}></img>
-            <img className="TechObject" src={ExpressImage}></img>
-            <img className="TechObject" src={JsImage}></img>
-            <img className="TechObject" src={HtmlImage}></img>
-            <img className="TechObject" src={CssImage}></img>
-            <img className="TechObject" src={ReactImage}></img>
+            <img className="TechObject" alt="" src={CppImage}></img>
+            <img className="TechObject" alt="" src={PythonImage}></img>
+            <img className="TechObject" alt="" src={LuaImage}></img>
+            <img className="TechObject" alt="" src={NodejsImage}></img>
+            <img className="TechObject" alt="" src={ExpressImage}></img>
+            <img className="TechObject" alt="" src={JsImage}></img>
+            <img className="TechObject" alt="" src={HtmlImage}></img>
+            <img className="TechObject" alt="" src={CssImage}></img>
+            <img className="TechObject" alt="" src={ReactImage}></img>
         </div>
     )
 }

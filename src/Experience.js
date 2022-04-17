@@ -19,7 +19,7 @@ export default function Experience() {
                         <li className="subSubInfo">Solutions also involved using current optical recognition software, such as Google Vision.</li>
                     </ul>
                 </div>
-                <img className="NNImage" src={NNImage}></img>
+                <img className="NNImage" src={NNImage} alt=""></img>
             </div>
         </>
     )

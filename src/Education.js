@@ -8,7 +8,7 @@ export default function Education() {
         <>
             <div className="Title">Education</div>
             <div className="BoxContainer">
-                <img className="UCRImage" src={UCRImage}></img>
+                <img className="UCRImage" src={UCRImage} alt=""></img>
                 <div className="BoxTitle">
                     University of California, Riverside
                     <br/>

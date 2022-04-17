@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header className="MainHeader">
             <div className="SubHeader IconHeader">
-                <img className="MainIcon" src={PersonImage}></img>
+                <img className="MainIcon" src={PersonImage} alt=""></img>
             </div>
             <div className="SubHeader NavigationHeader">
                 <a className="NavItem" href="./">Home</a>

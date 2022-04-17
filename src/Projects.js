@@ -11,17 +11,17 @@ export default function Projects() {
             <div className="Title" id="Projects">Projects</div>
             <div className="BoxContainer">
                 <div className="BoxTitle" id="ExpBox">
-                    <a className = "ProjectLink" href="https://receipthelpmanage.herokuapp.com/" target={"_blank"}>Receipt Manager Web App</a>
+                    <a className = "ProjectLink" href="https://receipthelpmanage.herokuapp.com/" target={"_blank"} rel="noopener noreferrer">Receipt Manager Web App</a>
                     <ul className="SubInfo">
                         <li>This app helps users manage their receipts by storing it in one database. It also allows users to sort, track, export, import, and analyze receipts.</li>
                         <li>This app was made using NodeJs, Express, HTML/CSS, and MongoDB. Users are first asked to login using Google oauth 2.0 and a MongoDB connection is made using mongoose.</li>
                     </ul>
                 </div>
-                <img className="ProjectVideo"></img>
+                <img className="ProjectVideo" alt=""></img>
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">
-                    <a href="https://github.com/OmarAttaalla/Chess-Game" target={"_blank"}>Chess Game</a>
+                    <a href="https://github.com/OmarAttaalla/Chess-Game" target={"_blank"} rel="noopener noreferrer">Chess Game</a>
                     <br/>
                     <ul className="SubInfo">
                         <li>This Chess Game was developed in C++ using QT Creator for the UI.</li>
@@ -29,29 +29,29 @@ export default function Projects() {
                         <li>Object Oriented, where we followed Design Patterns, such as the Strategy Design Pattern.</li>
                     </ul>
                 </div>
-                <img id="ChessImage" src={ChessImage}></img>
+                <img id="ChessImage" src={ChessImage} alt=""></img>
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">
-                    <a href="../public/Sorting.html" target={"_blank"}>Visual Sorting Algorithms</a>
+                    <a href="../public/Sorting.html" target={"_blank"} rel="noopener noreferrer">Visual Sorting Algorithms</a>
                     <br/>
                     <ul className="SubInfo">
                         <li>This Project includes visual representations of the most popular sorting algorithms (Selection Sort, Insertion Sort, Merge Sort, Quicksort)</li>
                         <li>The visuals are created using vanilla Javascript with HTML/CSS</li>
                     </ul>
                 </div>
-                <img id="SortImage" src={SortImage}></img>
+                <img id="SortImage" src={SortImage} alt=""></img>
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">
-                    <a href="https://learnrobooks.github.io/RoBooks/" target={"_blank"}>RoBooks</a>
+                    <a href="https://learnrobooks.github.io/RoBooks/" target={"_blank"} rel="noopener noreferrer">RoBooks</a>
                     <br/>
                     <ul className="SubInfo">
                         <li>Static site that teaches users how to program using LUA and how to use the Roblox Game Engine.</li>
                         <li>Made in Vanilla HTML/CSS and Javascript</li>
                     </ul>
                 </div>
-                <img id="RoBooksImage" src={RoBooksImage}></img>
+                <img id="RoBooksImage" src={RoBooksImage} alt=""></img>
             </div>
         </>
     )

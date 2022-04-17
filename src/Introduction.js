@@ -6,7 +6,7 @@ export default function Introduction() {
     return (
         <div className="FlexContainer">
             <div className="PersonImageContainer">
-                <img className="PersonImage" src={PersonImage}></img>
+                <img className="PersonImage" src={PersonImage} alt=""></img>
             </div>
             <div className="IntroTitle">
                 Hi! I'm Omar Attaalla
