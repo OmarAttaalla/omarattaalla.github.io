@@ -33,7 +33,7 @@ export default function Projects() {
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">
-                    <a href="../public/Sorting.html" target={"_blank"} rel="noopener noreferrer">Visual Sorting Algorithms</a>
+                    <a href="./Sorting.html" target={"_blank"} rel="noopener noreferrer">Visual Sorting Algorithms</a>
                     <br/>
                     <ul className="SubInfo">
                         <li>This Project includes visual representations of the most popular sorting algorithms (Selection Sort, Insertion Sort, Merge Sort, Quicksort)</li>
