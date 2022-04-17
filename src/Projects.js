@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css"
 import ChessImage from "./images/Chess.png"
 import SortImage from "./images/Sort.png"
+import RoBooksImage from "./images/RoBooks.png"
 
 export default function Projects() {
 
@@ -40,6 +41,17 @@ export default function Projects() {
                     </ul>
                 </div>
                 <img id="SortImage" src={SortImage}></img>
+            </div>
+            <div className="BoxContainer">
+                <div className="BoxTitle">
+                    <a href="https://learnrobooks.github.io/RoBooks/" target={"_blank"}>RoBooks</a>
+                    <br/>
+                    <ul className="SubInfo">
+                        <li>Static site that teaches users how to program using LUA and how to use the Roblox Game Engine.</li>
+                        <li>Made in Vanilla HTML/CSS and Javascript</li>
+                    </ul>
+                </div>
+                <img id="RoBooksImage" src={RoBooksImage}></img>
             </div>
         </>
     )
