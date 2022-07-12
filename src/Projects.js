@@ -3,6 +3,7 @@ import "./Projects.css"
 import ChessImage from "./images/Chess.png"
 import SortImage from "./images/Sort.png"
 import RoBooksImage from "./images/RoBooks.png"
+import ReceiptSimple from "./images/receiptsimple.png"
 
 export default function Projects() {
 
@@ -11,13 +12,13 @@ export default function Projects() {
             <div className="Title" id="Projects">Projects</div>
             <div className="BoxContainer">
                 <div className="BoxTitle" id="ExpBox">
-                    <a className = "ProjectLink" href="https://receipthelpmanage.herokuapp.com/" target={"_blank"} rel="noopener noreferrer">Receipt Manager Web App</a>
+                    <a className = "ProjectLink" href="https://receipthelpmanage.herokuapp.com/" target={"_blank"} rel="noopener noreferrer">Receipt Simple</a>
                     <ul className="SubInfo">
-                        <li>This app helps users manage their receipts by storing it in one database. It also allows users to sort, track, export, import, and analyze receipts.</li>
-                        <li>This app was made using NodeJs, Express, HTML/CSS, and MongoDB. Users are first asked to login using Google oauth 2.0 and a MongoDB connection is made using mongoose.</li>
+                        <li>Receipt Simple is a fullstack web application that allows users to track and analyze their receipts.</li>
+                        <li>This app was made using NodeJs, Express, React, JS/HTML/CSS, and MongoDB. Users are first asked to login using Google oauth and a MongoDB connection is made using mongoose.</li>
                     </ul>
                 </div>
-                <img className="ProjectVideo" alt=""></img>
+                <img id="ReceiptImage" src={ReceiptSimple} alt=""></img>
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">
