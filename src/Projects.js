@@ -12,10 +12,11 @@ export default function Projects() {
             <div className="Title" id="Projects">Projects</div>
             <div className="BoxContainer">
                 <div className="BoxTitle" id="ExpBox">
-                    <a className = "ProjectLink" href="https://receipthelpmanage.herokuapp.com/" target={"_blank"} rel="noopener noreferrer">Receipt Simple</a>
+                    <a className = "ProjectLink" href="https://receiptsimple.herokuapp.com/" target={"_blank"} rel="noopener noreferrer">Receipt Simple</a>
                     <ul className="SubInfo">
                         <li>Receipt Simple is a fullstack web application that allows users to track and analyze their receipts.</li>
                         <li>This app was made using NodeJs, Express, React, JS/HTML/CSS, and MongoDB. Users are first asked to login using Google oauth and a MongoDB connection is made using mongoose.</li>
+                        <li>This app includes calls to an OCR model that parses receipts for relevant information</li>
                     </ul>
                 </div>
                 <img id="ReceiptImage" src={ReceiptSimple} alt=""></img>
