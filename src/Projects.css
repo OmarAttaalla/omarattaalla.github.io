@@ -18,3 +18,14 @@
 #ReceiptImage {
     width: 150px;
 }
+
+
+@media (max-width: 600px) {
+    #ChessImage {
+        width: 200px;
+    }
+    
+    #SortImage {
+        width: 200px;
+    }
+}

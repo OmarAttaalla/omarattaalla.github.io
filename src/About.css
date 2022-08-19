@@ -58,3 +58,12 @@
     font-weight: 600;
     width: 100%;
 }
+
+@media (max-width: 600px) {
+    .BoxTitle {
+        font-size: 30px;
+    }
+    .subSubInfo {
+        font-size: 15px;
+    }
+}
