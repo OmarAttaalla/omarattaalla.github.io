@@ -3,7 +3,7 @@ import "./Projects.css"
 import ChessImage from "./images/Chess.png"
 import SortImage from "./images/Sort.png"
 import RoBooksImage from "./images/RoBooks.png"
-import ReceiptSimple from "./images/receiptsimple.png"
+import ReceiptSimple from "./images/ReceiptSimpleDemo.webp"
 
 export default function Projects() {
 

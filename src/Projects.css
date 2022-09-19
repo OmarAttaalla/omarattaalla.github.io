@@ -16,16 +16,31 @@
 }
 
 #ReceiptImage {
-    width: 150px;
+    width: 500px;
 }
 
 
+@media (max-width: 800px) {
+    #ReceiptImage {
+        width: 400px;
+    }
+}
+
 @media (max-width: 600px) {
+    #ReceiptImage {
+        width: 300px;
+    }
     #ChessImage {
         width: 200px;
     }
     
     #SortImage {
+        width: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    #ReceiptImage {
         width: 200px;
     }
 }
