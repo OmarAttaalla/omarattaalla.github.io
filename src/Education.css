@@ -5,7 +5,6 @@
 
 .UCRImage {
     width: 150px;
-    height: 150px;
 }
 
 @media (max-width: 600px) {

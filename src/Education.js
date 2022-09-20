@@ -1,12 +1,25 @@
 import React from "react";
 import "./Education.css"
 import UCRImage from './images/UCR.png'
+import UCIImage from './images/UCI.png'
 
 export default function Education() {
 
     return (
         <>
             <div className="Title">Education</div>
+            <div className="BoxContainer">
+                <img className="UCRImage" src={UCIImage} alt=""></img>
+                <div className="BoxTitle">
+                    University of California, Irvine
+                    <br/>
+                    <li className="CompEng">B.S. Computer Engineering</li>
+                    <ul className="SubInfo">
+                        <li>Data Structures and Algorithms</li>
+                        <li className="subSubInfo">Arrays, Stacks, Queues, Heaps, Hash Tables, Trees, Graphs</li>
+                    </ul>
+                </div>
+            </div>
             <div className="BoxContainer">
                 <img className="UCRImage" src={UCRImage} alt=""></img>
                 <div className="BoxTitle">
