@@ -12,7 +12,7 @@ export default function Introduction() {
                 Hi! I'm Omar Attaalla
                 <br/>
                 <ul className="SubInfo">
-                    <li>Computer Engineering Student @ UCR</li>
+                    <li>Computer Engineering Student @ UCI</li>
                 </ul>
             </div>
         </div>
