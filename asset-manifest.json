@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.10d718a6.css",
-    "main.js": "/static/js/main.353da862.js",
+    "main.css": "/static/css/main.8b063419.css",
+    "main.js": "/static/js/main.889ba64e.js",
     "static/media/ReceiptSimpleDemo.webp": "/static/media/ReceiptSimpleDemo.474873b1dbc392c9b5f5.webp",
     "static/media/person.png": "/static/media/person.ad2f6e58ad195fd65783.png",
+    "static/media/BallBlast.png": "/static/media/BallBlast.6d8d63c594ac24e97fb4.png",
     "static/media/html.png": "/static/media/html.87ec4ca091a507e14a7f.png",
     "static/media/React.png": "/static/media/React.73dbb5bcec516da82694.png",
     "static/media/python.png": "/static/media/python.f0c9d64775aac23759fe.png",
@@ -13,17 +14,18 @@
     "static/media/Chess.png": "/static/media/Chess.518398067afc8eb87994.png",
     "static/media/NN.png": "/static/media/NN.ae0e9bfa40b69a70e7f1.png",
     "static/media/Nodejs.png": "/static/media/Nodejs.abfaef34ea49d0c7cd3c.png",
+    "static/media/invoiceManager.png": "/static/media/invoiceManager.d4dec1dd221023819581.png",
     "static/media/css.png": "/static/media/css.0c2690a25c4bec03822a.png",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
     "static/media/UCI.png": "/static/media/UCI.f3e4607fae9939d33c65.png",
     "static/media/RoBooks.png": "/static/media/RoBooks.f079c370d76f736a1f50.png",
     "static/media/Sort.png": "/static/media/Sort.7f2d2b905e4ac178960a.png",
     "index.html": "/index.html",
-    "main.10d718a6.css.map": "/static/css/main.10d718a6.css.map",
-    "main.353da862.js.map": "/static/js/main.353da862.js.map"
+    "main.8b063419.css.map": "/static/css/main.8b063419.css.map",
+    "main.889ba64e.js.map": "/static/js/main.889ba64e.js.map"
   },
   "entrypoints": [
-    "static/css/main.10d718a6.css",
-    "static/js/main.353da862.js"
+    "static/css/main.8b063419.css",
+    "static/js/main.889ba64e.js"
   ]
 }
