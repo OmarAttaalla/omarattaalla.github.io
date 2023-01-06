@@ -19,15 +19,32 @@
     width: 500px;
 }
 
+#InvoiceImage {
+    width: 500px;
+}
+
+#BallBlastImage {
+    width: 500px;
+}
+
 
 @media (max-width: 800px) {
     #ReceiptImage {
+        width: 400px;
+    }
+    #InvoiceImage {
+        width: 400px;
+    }
+    #BallBlastImage {
         width: 400px;
     }
 }
 
 @media (max-width: 600px) {
     #ReceiptImage {
+        width: 300px;
+    }
+    #InvoiceImage {
         width: 300px;
     }
     #ChessImage {
@@ -37,10 +54,20 @@
     #SortImage {
         width: 200px;
     }
+
+    #BallBlastImage {
+        width: 300px;
+    }
 }
 
 @media (max-width: 400px) {
     #ReceiptImage {
+        width: 200px;
+    }
+    #InvoiceImage {
+        width: 200px;
+    }
+    #BallBlastImage {
         width: 200px;
     }
 }
