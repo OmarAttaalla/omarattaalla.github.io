@@ -7,8 +7,41 @@
     width: 150px;
 }
 
+.UCIImage {
+    width: 500px;
+    padding: 10px;
+}
+
+.UCIImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 @media (max-width: 600px) {
     .CompEng {
         font-size: 30px;
+    }
+    .UCIImage {
+        width: 250px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 920px) {
+    .CompEng {
+        font-size: 30px;
+    }
+    .UCIImage {
+        width: 300px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .UCIImage {
+        width: 150px;
+        padding: 10px;
     }
 }
