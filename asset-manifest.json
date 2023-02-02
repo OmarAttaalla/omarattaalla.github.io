@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b063419.css",
-    "main.js": "/static/js/main.cad1d4a4.js",
+    "main.css": "/static/css/main.e5a89999.css",
+    "main.js": "/static/js/main.a3ae8d0e.js",
     "static/media/ReceiptSimpleDemo.webp": "/static/media/ReceiptSimpleDemo.474873b1dbc392c9b5f5.webp",
     "static/media/person.png": "/static/media/person.ad2f6e58ad195fd65783.png",
     "static/media/BallBlast.png": "/static/media/BallBlast.6d8d63c594ac24e97fb4.png",
@@ -16,16 +16,16 @@
     "static/media/Nodejs.png": "/static/media/Nodejs.abfaef34ea49d0c7cd3c.png",
     "static/media/invoiceManager.png": "/static/media/invoiceManager.d4dec1dd221023819581.png",
     "static/media/css.png": "/static/media/css.0c2690a25c4bec03822a.png",
+    "static/media/UCIICS.png": "/static/media/UCIICS.a13b89ffbf37a60368db.png",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
-    "static/media/UCI.png": "/static/media/UCI.f3e4607fae9939d33c65.png",
     "static/media/RoBooks.png": "/static/media/RoBooks.f079c370d76f736a1f50.png",
     "static/media/Sort.png": "/static/media/Sort.7f2d2b905e4ac178960a.png",
     "index.html": "/index.html",
-    "main.8b063419.css.map": "/static/css/main.8b063419.css.map",
-    "main.cad1d4a4.js.map": "/static/js/main.cad1d4a4.js.map"
+    "main.e5a89999.css.map": "/static/css/main.e5a89999.css.map",
+    "main.a3ae8d0e.js.map": "/static/js/main.a3ae8d0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b063419.css",
-    "static/js/main.cad1d4a4.js"
+    "static/css/main.e5a89999.css",
+    "static/js/main.a3ae8d0e.js"
   ]
 }
