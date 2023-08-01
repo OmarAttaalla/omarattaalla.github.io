@@ -7,6 +7,10 @@
     width: 400px;
 }
 
+#SafetyImage {
+    width: 800px;
+}
+
 #SortImage {
     width: 400px;
 }
@@ -20,7 +24,7 @@
 }
 
 #InvoiceImage {
-    width: 500px;
+    width: 800px;
 }
 
 #BallBlastImage {
@@ -36,6 +40,9 @@
         width: 400px;
     }
     #BallBlastImage {
+        width: 400px;
+    }
+    #SafetyImage {
         width: 400px;
     }
 }
@@ -58,6 +65,9 @@
     #BallBlastImage {
         width: 300px;
     }
+    #SafetyImage {
+        width: 300px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -68,6 +78,9 @@
         width: 200px;
     }
     #BallBlastImage {
+        width: 200px;
+    }
+    #SafetyImage {
         width: 200px;
     }
 }

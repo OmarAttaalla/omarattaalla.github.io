@@ -4,8 +4,11 @@ import ChessImage from "./images/Chess.png"
 import SortImage from "./images/Sort.png"
 import RoBooksImage from "./images/RoBooks.png"
 import ReceiptSimple from "./images/ReceiptSimpleDemo.webp"
-import InvoiceImage from "./images/invoiceManager.png"
+import InvoiceImage from "./images/structurein.png"
 import BallBlastImage from "./images/BallBlast.png"
+import ReactPlayer from 'react-player'
+import SafetyImage from "./images/Safety.png"
+import SafetyPDF from "./images/First Responder's Smart Badge.pdf"
 
 export default function Projects() {
 
@@ -21,14 +24,15 @@ export default function Projects() {
                         <li>This app includes calls to an OCR model that parses receipts for relevant information</li>
                     </ul>
                 </div>
-                <img id="ReceiptImage" src={ReceiptSimple} alt=""></img>
+                <ReactPlayer url='https://youtu.be/7PPXZ2W9Ngo' />
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">
-                    <a className = "ProjectLink" href="https://github.com/OmarAttaalla/invoiceManager" target={"_blank"} rel="noopener noreferrer">Invoice Manager</a>
+                    <a className = "ProjectLink" href="" target={"_blank"} rel="noopener noreferrer">Structure In</a>
                     <ul className="SubInfo">
-                        <li>Invoice Manager is an application that allows users to organize their individual projects. Information is stored about each project and allows the user to generate invoices automatically.</li>
-                        <li>This app was made using Python and PySimpleGUI</li>
+                        <li>Structure is an application that allows users, particularly structural engineers, to manage projects and accounting with ease.</li>
+                        <li>Structure In provides an easy to use interface that stores information on employees, billing, projects, revenue, and expenses.</li>
+                        <li>Structure In uses the information provided to automatically generate invoices, agreements, and company summaries.</li>
                     </ul>
                 </div>
                 <img id="InvoiceImage" src={InvoiceImage} alt=""></img>
@@ -44,6 +48,20 @@ export default function Projects() {
                     </ul>
                 </div>
                 <img id="ChessImage" src={ChessImage} alt=""></img>
+            </div>
+
+            <div className="BoxContainer">
+                <div className="BoxTitle">
+                    <a href={SafetyPDF} target={"_blank"} rel="noopener noreferrer">First Responder's Safety Badge</a>
+                    <br/>
+                    <ul className="SubInfo">
+                        <li>First Responder's Safety Badge is an embedded IOT device that alerts its user of possible harmful materials in the air.</li>
+                        <li>The Badge records data and sends it to a Firebase database. From there, the data is presented in graphical form at a React.js based web application.</li>
+                        <li>The Badge utilizes I2C with multiple sensors to record the data.</li>
+                        <li>I was in charge of designing and writing all Embedded software, Database design, and web application software.</li>
+                    </ul>
+                </div>
+                <img id="SafetyImage" src={SafetyImage} alt=""></img>
             </div>
 
             <div className="BoxContainer">
