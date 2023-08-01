@@ -3,7 +3,6 @@ import "./Projects.css"
 import ChessImage from "./images/Chess.png"
 import SortImage from "./images/Sort.png"
 import RoBooksImage from "./images/RoBooks.png"
-import ReceiptSimple from "./images/ReceiptSimpleDemo.webp"
 import InvoiceImage from "./images/structurein.png"
 import BallBlastImage from "./images/BallBlast.png"
 import ReactPlayer from 'react-player'
@@ -28,7 +27,7 @@ export default function Projects() {
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">
-                    <a className = "ProjectLink" href="" target={"_blank"} rel="noopener noreferrer">Structure In</a>
+                    <a className = "ProjectLink" href="https://github.com/OmarAttaalla" target={"_blank"} rel="noopener noreferrer">Structure In</a>
                     <ul className="SubInfo">
                         <li>Structure is an application that allows users, particularly structural engineers, to manage projects and accounting with ease.</li>
                         <li>Structure In provides an easy to use interface that stores information on employees, billing, projects, revenue, and expenses.</li>
