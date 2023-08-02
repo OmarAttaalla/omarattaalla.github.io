@@ -27,7 +27,7 @@ export default function Projects() {
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">
-                    <a className = "ProjectLink" href="https://github.com/OmarAttaalla" target={"_blank"} rel="noopener noreferrer">Structure In</a>
+                    <a className = "ProjectLink" href="https://structure-in.web.app/" target={"_blank"} rel="noopener noreferrer">Structure In</a>
                     <ul className="SubInfo">
                         <li>Structure is an application that allows users, particularly structural engineers, to manage projects and accounting with ease.</li>
                         <li>Structure In provides an easy to use interface that stores information on employees, billing, projects, revenue, and expenses.</li>
