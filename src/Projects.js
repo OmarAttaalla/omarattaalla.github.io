@@ -15,6 +15,17 @@ export default function Projects() {
         <>
             <div className="Title" id="Projects">Projects</div>
             <div className="BoxContainer">
+                <div className="BoxTitle">
+                    <a className = "ProjectLink" href="https://structurein.com/" target={"_blank"} rel="noopener noreferrer">Structure In</a>
+                    <ul className="SubInfo">
+                        <li>Structure is an application that allows users, particularly structural engineers, to manage projects and accounting with ease.</li>
+                        <li>Structure In provides an easy to use interface that stores information on employees, billing, projects, revenue, and expenses.</li>
+                        <li>Structure In uses the information provided to automatically generate invoices, agreements, and company summaries.</li>
+                    </ul>
+                </div>
+                <img id="InvoiceImage" src={InvoiceImage} alt=""></img>
+            </div>
+            <div className="BoxContainer">
                 <div className="BoxTitle" id="ExpBox">
                     <a className = "ProjectLink" href="https://receiptsimple.herokuapp.com/" target={"_blank"} rel="noopener noreferrer">Receipt Simple</a>
                     <ul className="SubInfo">
@@ -24,17 +35,6 @@ export default function Projects() {
                     </ul>
                 </div>
                 <ReactPlayer url='https://youtu.be/7PPXZ2W9Ngo' />
-            </div>
-            <div className="BoxContainer">
-                <div className="BoxTitle">
-                    <a className = "ProjectLink" href="https://structure-in.web.app/" target={"_blank"} rel="noopener noreferrer">Structure In</a>
-                    <ul className="SubInfo">
-                        <li>Structure is an application that allows users, particularly structural engineers, to manage projects and accounting with ease.</li>
-                        <li>Structure In provides an easy to use interface that stores information on employees, billing, projects, revenue, and expenses.</li>
-                        <li>Structure In uses the information provided to automatically generate invoices, agreements, and company summaries.</li>
-                    </ul>
-                </div>
-                <img id="InvoiceImage" src={InvoiceImage} alt=""></img>
             </div>
             <div className="BoxContainer">
                 <div className="BoxTitle">

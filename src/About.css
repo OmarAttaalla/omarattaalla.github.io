@@ -66,4 +66,7 @@
     .subSubInfo {
         font-size: 15px;
     }
+    .BoxContainer {
+        width: 90%;
+    }
 }
