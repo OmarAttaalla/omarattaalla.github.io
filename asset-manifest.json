@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.7adaf4c6.css",
-    "main.js": "/static/js/main.28cc60c6.js",
+    "main.css": "/static/css/main.2c89abf9.css",
+    "main.js": "/static/js/main.6f5c2df9.js",
     "static/media/Safety.png": "/static/media/Safety.4f52cad92f27c2a3d285.png",
     "static/media/First Responder's Smart Badge.pdf": "/static/media/First Responder's Smart Badge.11d60541c1f418070c6d.pdf",
+    "static/media/DoD.png": "/static/media/DoD.f0d1e98eca2d7266a848.png",
+    "static/media/safety_web.png": "/static/media/safety_web.d64e46481640a3262c9b.png",
     "static/media/person.png": "/static/media/person.ad2f6e58ad195fd65783.png",
+    "static/media/aws.png": "/static/media/aws.25a9d15a73775b6f8ec1.png",
     "static/media/BallBlast.png": "/static/media/BallBlast.6d8d63c594ac24e97fb4.png",
     "static/media/html.png": "/static/media/html.87ec4ca091a507e14a7f.png",
     "static/media/React.png": "/static/media/React.73dbb5bcec516da82694.png",
@@ -14,19 +17,29 @@
     "static/media/Cpp.png": "/static/media/Cpp.0a81196c8995a6248ba3.png",
     "static/media/Chess.png": "/static/media/Chess.518398067afc8eb87994.png",
     "static/media/NN.png": "/static/media/NN.ae0e9bfa40b69a70e7f1.png",
+    "static/media/ubuntu_logo.png": "/static/media/ubuntu_logo.61659fc7382b430f1c66.png",
     "static/media/Nodejs.png": "/static/media/Nodejs.abfaef34ea49d0c7cd3c.png",
     "static/media/css.png": "/static/media/css.0c2690a25c4bec03822a.png",
     "static/media/structurein.png": "/static/media/structurein.eb3d25b2dadca28681ba.png",
-    "static/media/UCIICS.png": "/static/media/UCIICS.a13b89ffbf37a60368db.png",
+    "static/media/Django-Logo.png": "/static/media/Django-Logo.b47845d0ec1bdea99ef6.png",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
+    "static/media/Firebase.png": "/static/media/Firebase.2338cf09321ec0c15ac2.png",
     "static/media/RoBooks.png": "/static/media/RoBooks.f079c370d76f736a1f50.png",
+    "static/media/uci_logo.jpg": "/static/media/uci_logo.67a04bf7b9cc6f8911e2.jpg",
+    "static/media/ros-ros2.webp": "/static/media/ros-ros2.ba979eeaf3fbbda27b9e.webp",
+    "static/media/gcp.webp": "/static/media/gcp.28c90bb13c06a880ac25.webp",
+    "static/media/ADR_Engineers.png": "/static/media/ADR_Engineers.daa8fed1ca50629c9583.png",
+    "static/media/AWS-rc2.png": "/static/media/AWS-rc2.88867582be153ddc0007.png",
     "static/media/Sort.png": "/static/media/Sort.7f2d2b905e4ac178960a.png",
+    "static/media/dynamo_db-image.svg": "/static/media/dynamo_db-image.e4ac57300be26bc1e869bd0c9198c923.svg",
+    "static/media/next-js.svg": "/static/media/next-js.1b2b52c044b9dcea988e68b966864c5a.svg",
+    "static/media/moon.svg": "/static/media/moon.02823345fc8f495d98ed473c05c61ac2.svg",
     "index.html": "/index.html",
-    "main.7adaf4c6.css.map": "/static/css/main.7adaf4c6.css.map",
-    "main.28cc60c6.js.map": "/static/js/main.28cc60c6.js.map"
+    "main.2c89abf9.css.map": "/static/css/main.2c89abf9.css.map",
+    "main.6f5c2df9.js.map": "/static/js/main.6f5c2df9.js.map"
   },
   "entrypoints": [
-    "static/css/main.7adaf4c6.css",
-    "static/js/main.28cc60c6.js"
+    "static/css/main.2c89abf9.css",
+    "static/js/main.6f5c2df9.js"
   ]
 }
