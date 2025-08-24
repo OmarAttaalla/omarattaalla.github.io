@@ -15,7 +15,7 @@ const education = [
         SubComponent: () => (
             <InfoBlock
                 title={"Relevant Coursework"}
-                subtitle={" - Advanced Algorithms, Machine Learning, Data Mining, Software Engineering, Web Development"}
+                subtitle={" - Advanced Algorithms, Advanced Data Structures, Principles of Scientific Computing, Machine Learning, Artificial Intelligence, Transaction Processing & Distributed Data Management, Distributed Systems, Computer Networks, Parallel Computing, "}
             />
         ),
     },
@@ -26,12 +26,6 @@ const education = [
             <InfoBlock
                 title={"University of California, Irvine (2022 - 2024)"}
                 subtitle={" - B.S. Computer Science & Engineering"}
-            />
-        ),
-        SubComponent: () => (
-            <InfoBlock
-                title={"Relevant Coursework"}
-                subtitle={" - Data Structures, Algorithms, Computer Architecture, Operating Systems, Database Systems, Software Engineering, Web Development, Machine Learning"}
             />
         ),
     },

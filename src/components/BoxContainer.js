@@ -1,8 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './BoxContainer.css';
+import { useDarkMode } from "../context/DarkModeContext";
 
 export default function BoxContainer({ data }) {
-  const { title, imageSrc, MainComponent, SubComponent } = data;
+  const { title, imageSrc, invertImage, MainComponent, SubComponent } = data;
+
+  const { darkMode } = useDarkMode();
 
   const [isExpanded, setIsExpanded] = useState(false);
   const [contentHeight, setContentHeight] = useState(0);
@@ -21,7 +24,7 @@ export default function BoxContainer({ data }) {
   return (
     <div className={`BoxContainer ${SubComponent && !isExpanded ? 'bottom-padding-zero' : ''}`}>
 
-        {imageSrc && <img className="boxItem projectImage" src={imageSrc} alt={title} />}
+        {imageSrc && <img className={`boxItem projectImage ${invertImage && darkMode ? 'inverted' : ''}`} src={imageSrc} alt={title} />}
 
         <div className="boxItem InfoContainer">
             <MainComponent />

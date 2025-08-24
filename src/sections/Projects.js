@@ -7,7 +7,9 @@ export default function Projects() {
     return (
         <>
             <div className="Title" id="Projects">Projects</div>
-            
+            <div className="divider-container">
+                <div className="divider"></div>
+            </div>
             {projects.map((project, index) => (
                 <BoxContainer key={index} data={project} />
             ))}

@@ -8,8 +8,10 @@ export default function Experience() {
 
     return (
         <>
-            <div className="Title">Experience</div>
-
+            <div className="Title" id="Experience">Experience</div>
+            <div className="divider-container">
+                <div className="divider"></div>
+            </div>
             {experience.map((exp, index) => (
                 <BoxContainer key={index} data={exp} />
             ))}

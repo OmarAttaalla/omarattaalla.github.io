@@ -40,3 +40,86 @@
 .NavItem:active {
     background-color: var(--background-3);
 }
+
+#darkModeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#darkModeButton:hover {
+    background-color: var(--background-2);
+}
+
+#darkModeButton:active {
+    background-color: var(--background-3);
+}
+
+#darkModeIcon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--foreground-2);
+    border-radius: 10px;
+}
+
+button.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 20px;
+}
+
+button.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--foreground);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+button.hamburger.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+button.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+button.hamburger.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 0px;
+  }
+
+  .flex50 {
+    width: 100%;
+  }
+
+  nav.desktop-nav {
+    display: none;
+  }
+
+  button.hamburger {
+    display: flex;
+  }
+
+  nav.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+
+  }
+}

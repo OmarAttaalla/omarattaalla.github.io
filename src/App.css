@@ -69,3 +69,24 @@ html {
 .inverted {
     filter: invert(1);
 }
+
+.divider-container {
+    width: 100%;
+    background-color: transparent;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--foreground);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 1400px) {
+    .ProjectImage {
+        width: 100%;
+    }
+}

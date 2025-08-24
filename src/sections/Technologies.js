@@ -15,6 +15,11 @@ import ROS2Image from '../images/ros-ros2.webp'
 import UbuntuImage from '../images/ubuntu_logo.png'
 import NextJS from '../images/next-js.svg'
 import DjangoImage from '../images/Django-Logo.png'
+import aws from '../images/aws.png'
+import awsEC2 from '../images/AWS-rc2.png'
+import awsDynamo from '../images/dynamo_db-image.svg'
+import gcp from '../images/gcp.webp'
+import firebase from '../images/Firebase.png'
 import { useDarkMode } from "../context/DarkModeContext";
 
 export default function Technologies() {
@@ -43,6 +48,11 @@ export default function Technologies() {
                 alt=""
                 src={NextJS}
             />
+            <img className="TechObject" alt="" src={aws}></img>
+            <img className="TechObject" alt="" src={awsEC2}></img>
+            <img className="TechObject" alt="" src={awsDynamo}></img>
+            <img className="TechObject" alt="" src={gcp}></img>
+            <img className="TechObject" alt="" src={firebase}></img>
             <img className="TechObject" alt="" src={LuaImage}></img>
         </div>
     )

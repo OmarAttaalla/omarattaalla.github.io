@@ -1,10 +1,12 @@
 import ChessImage from "../images/Chess.png";
+import KnightImage from "../images/w_knight.png";
 import SortImage from "../images/Sort.png";
 import RoBooksImage from "../images/RoBooks.png";
 import StructureInLogo from "../images/structure_in_logo.png";
 import InvoiceImage from "../images/structurein.png";
 import BallBlastImage from "../images/BallBlast.png";
 import SafetyImage from "../images/Safety.png";
+import SafetyWebImage from "../images/safety_web.png";
 import SafetyPDF from "../images/First Responder's Smart Badge.pdf";
 import ReceiptSimpleImage from "../images/receipt-simple.png";
 import ReactPlayer from 'react-player';
@@ -57,7 +59,7 @@ const projects = [
   },
   {
     title: "Chess Game",
-    imageSrc: ChessImage,
+    imageSrc: KnightImage,
     MainComponent: () => (
       <LinkComponent
         link={"https://github.com/OmarAttaalla/Chess-Game"}
@@ -69,10 +71,11 @@ const projects = [
         ]}
       />
     ),
+    SubComponent: () => imageSubComponent(ChessImage)
   },
   {
     title: "First Responder's Safety Badge",
-    imageSrc: SafetyImage,
+    imageSrc: SafetyWebImage,
     MainComponent: () => (
       <LinkComponent
         link={SafetyPDF}
@@ -85,6 +88,7 @@ const projects = [
         ]}
       />
     ),
+    SubComponent: () => imageSubComponent(SafetyImage)
   },
   {
     title: "AI Learns Ball Blast",

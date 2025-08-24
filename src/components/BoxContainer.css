@@ -70,8 +70,12 @@
     padding-bottom: 0px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+    .boxItem {
+        flex-basis: 100%;
+    }
+
     .projectImage {
-        width: 400px;
+        height: auto;
     }
 }
