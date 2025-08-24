@@ -11,7 +11,7 @@ export default function AnimationSection() {
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            animationData: require('./96971-code-blue.json')
+            animationData: require('../animations/96971-code-blue.json')
         })
     })
 

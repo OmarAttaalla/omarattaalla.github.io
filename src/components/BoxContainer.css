@@ -1,0 +1,81 @@
+.Link {
+    text-align: left;
+    width: 100%;
+}
+
+.InfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+}
+
+.BoxContainer {
+    display: flex;
+    gap: 20px;
+    background-color: var(--background-15);
+    box-shadow: var(--shadow-color) 0px 2px 4px 0px;
+    transition: box-shadow 0.3s ease;
+    padding: 50px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.BoxContainer:hover {
+    box-shadow: var(--shadow-color-2) 0px 4px 8px 0px;
+}
+
+.BoxTitle {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content-box {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--foreground-2);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.projectImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    /* box-shadow: 0 6px 7px #c9c9c9; */
+    border: 1px solid var(--background-3);
+    flex-shrink: 0;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.bottom-padding-zero {
+    padding-bottom: 0px;
+}
+
+@media (max-width: 600px) {
+    .boxItem {
+        flex-basis: 100%;
+    }
+
+    .projectImage {
+        height: auto;
+    }
+}

@@ -7,8 +7,8 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fbfbfb;
-    box-shadow: 0 2px 4px #c9c9c9;
+    background-color: var(--background15);
+    box-shadow: var(--shadow-color) 0px 2px 4px 0px;
     width: 100%;
     column-gap: 30px;
     row-gap: 10px;
@@ -23,7 +23,7 @@ html, body {
 }
 
 .TechObject {
-    height: 120px;
+    height: 70px;
     padding-bottom: 20px;
     padding-top: 20px;
 }

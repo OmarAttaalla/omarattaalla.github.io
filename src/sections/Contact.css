@@ -1,5 +1,5 @@
 #ContactContainer {
-    background-color: #fbfbfb;
+    background-color: var(--background-15);
     gap: 20px;
 }
 

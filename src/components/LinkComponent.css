@@ -1,0 +1,16 @@
+.LinkTitle {
+    margin: 0;
+    font-size: 18px;
+}
+
+.LinkSubtitle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--foreground);
+}
+
+.Link {
+    text-decoration: underline;
+    color: var(--foreground);
+}
