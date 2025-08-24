@@ -1,10 +1,8 @@
-import InfoBlock from "../components/InfoBlock";
 import NNImage from '../images/NN.png';
 import ADRImage from '../images/ADR_Engineers.png';
 import ArcyncImage from '../images/arcync_logo.jpg';
 import DoDImage from '../images/DoD.png';
 import UCIImage from '../images/uci_logo.jpg';
-import ListBlock from "../components/ListBlock";
 import LinkComponent from "../components/LinkComponent";
 
 const experience = [

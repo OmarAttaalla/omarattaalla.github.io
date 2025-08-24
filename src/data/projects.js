@@ -1,10 +1,7 @@
 import ChessImage from "../images/Chess.png";
 import KnightImage from "../images/w_knight.png";
-import SortImage from "../images/Sort.png";
-import RoBooksImage from "../images/RoBooks.png";
 import StructureInLogo from "../images/structure_in_logo.png";
 import InvoiceImage from "../images/structurein.png";
-import BallBlastImage from "../images/BallBlast.png";
 import SafetyImage from "../images/Safety.png";
 import SafetyWebImage from "../images/safety_web.png";
 import SafetyPDF from "../images/First Responder's Smart Badge.pdf";

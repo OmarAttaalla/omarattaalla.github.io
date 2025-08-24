@@ -1,6 +1,4 @@
-import React from "react";
 import "./Experience.css"
-import NNImage from '../images/NN.png'
 import experience from "../data/experience.js";
 import BoxContainer from "../components/BoxContainer.js";
 
