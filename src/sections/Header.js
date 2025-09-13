@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import PersonImage from '../images/person.png'
+import PersonImage from '../images/person2.png'
 import "./Header.css"
 import { useDarkMode } from "../context/DarkModeContext";
 import SunImage from '../images/sun.png'
