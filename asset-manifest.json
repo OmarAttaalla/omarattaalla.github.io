@@ -1,12 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.de01ccbd.css",
-    "main.js": "/static/js/main.136196de.js",
+    "main.css": "/static/css/main.307ada14.css",
+    "main.js": "/static/js/main.8a5a745f.js",
     "static/media/Safety.png": "/static/media/Safety.4f52cad92f27c2a3d285.png",
     "static/media/First Responder's Smart Badge.pdf": "/static/media/First Responder's Smart Badge.11d60541c1f418070c6d.pdf",
     "static/media/DoD.png": "/static/media/DoD.f0d1e98eca2d7266a848.png",
     "static/media/person2.png": "/static/media/person2.a5d9ce1d786b9ab77372.png",
+    "static/media/Distributed ML.pdf": "/static/media/Distributed ML.5f1aaaa85c7e1636951b.pdf",
+    "static/media/Emotion_Detection_CNN-ViT.pdf": "/static/media/Emotion_Detection_CNN-ViT.070bc49d4cf0012d4b3b.pdf",
+    "static/media/Locks.pdf": "/static/media/Locks.6fcf7e8f39daf3ff49b5.pdf",
+    "static/media/Transaction Chains.pdf": "/static/media/Transaction Chains.32d2a0273363b3467150.pdf",
     "static/media/safety_web.png": "/static/media/safety_web.d64e46481640a3262c9b.png",
+    "static/media/Emotion_Detection_CNN-ViT-1.png": "/static/media/Emotion_Detection_CNN-ViT-1.6d611b4efab9aadc5327.png",
+    "static/media/Transaction Chains-1.png": "/static/media/Transaction Chains-1.9682470ab7dc836a3e82.png",
+    "static/media/Traveling Salesman-02.png": "/static/media/Traveling Salesman-02.2a48e699f98c1ba138ce.png",
+    "static/media/Traveling Salesman.pdf": "/static/media/Traveling Salesman.b39dce8030766c8fde0b.pdf",
+    "static/media/Distributed ML-2.png": "/static/media/Distributed ML-2.71f1984abb983cd5769d.png",
+    "static/media/Parallel_AStar-1.png": "/static/media/Parallel_AStar-1.d6114c7f38c3694d7413.png",
+    "static/media/Parallel_AStar.pdf": "/static/media/Parallel_AStar.e1e3abb90f747ea23f45.pdf",
+    "static/media/Locks-1.png": "/static/media/Locks-1.857e4122d3d095f8c6d7.png",
     "static/media/aws.png": "/static/media/aws.25a9d15a73775b6f8ec1.png",
     "static/media/BallBlast.png": "/static/media/BallBlast.6d8d63c594ac24e97fb4.png",
     "static/media/html.png": "/static/media/html.87ec4ca091a507e14a7f.png",
@@ -35,11 +47,11 @@
     "static/media/next-js.svg": "/static/media/next-js.1b2b52c044b9dcea988e68b966864c5a.svg",
     "static/media/moon.svg": "/static/media/moon.02823345fc8f495d98ed473c05c61ac2.svg",
     "index.html": "/index.html",
-    "main.de01ccbd.css.map": "/static/css/main.de01ccbd.css.map",
-    "main.136196de.js.map": "/static/js/main.136196de.js.map"
+    "main.307ada14.css.map": "/static/css/main.307ada14.css.map",
+    "main.8a5a745f.js.map": "/static/js/main.8a5a745f.js.map"
   },
   "entrypoints": [
-    "static/css/main.de01ccbd.css",
-    "static/js/main.136196de.js"
+    "static/css/main.307ada14.css",
+    "static/js/main.8a5a745f.js"
   ]
 }
