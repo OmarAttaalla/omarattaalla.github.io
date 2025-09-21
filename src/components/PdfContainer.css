@@ -21,6 +21,7 @@
     width: 300px;
     border: 1px solid var(--background-2);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .pdf-title {
