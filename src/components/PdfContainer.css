@@ -1,0 +1,34 @@
+.pdf-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.pdfs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.pdf-header {
+    flex-grow: 1;
+}
+
+.pdf-viewer {
+    width: 300px;
+    border: 1px solid var(--background-2);
+    border-radius: 10px;
+}
+
+.pdf-title {
+    color: var(--foreground);
+}
+
+@media (max-width: 1700px) {
+    .pdf-container {
+        flex-wrap: wrap;
+    }
+}
