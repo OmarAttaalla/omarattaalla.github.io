@@ -12,6 +12,8 @@ export default function PdfContainer({ title, abstract, pdfUrl, previewImage }) 
             <img
                 src={previewImage}
                 className="pdf-viewer"
+                alt="PDF Preview"
+                onClick={() => window.open(pdfUrl, "_blank")}
             />
         </div>
     );
