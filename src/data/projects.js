@@ -1,11 +1,11 @@
-import ChessImage from "../images/Chess.png";
-import KnightImage from "../images/w_knight.png";
-import StructureInLogo from "../images/structure_in_logo.png";
-import InvoiceImage from "../images/structurein.png";
-import SafetyImage from "../images/Safety.png";
-import SafetyWebImage from "../images/safety_web.png";
-import SafetyPDF from "../images/First Responder's Smart Badge.pdf";
-import ReceiptSimpleImage from "../images/receipt-simple.png";
+import ChessImage from "../assets/Chess.png";
+import KnightImage from "../assets/w_knight.png";
+import StructureInLogo from "../assets/structure_in_logo.png";
+import InvoiceImage from "../assets/structurein.png";
+import SafetyImage from "../assets/Safety.png";
+import SafetyWebImage from "../assets/safety_web.png";
+import SafetyPDF from "../assets/First Responder's Smart Badge.pdf";
+import ReceiptSimpleImage from "../assets/receipt-simple.png";
 import ReactPlayer from 'react-player';
 import LinkComponent from "../components/LinkComponent";
 
@@ -89,7 +89,7 @@ const projects = [
   },
   {
     title: "AI Learns Ball Blast",
-    imageSrc: require("../images/BallBlast.png"),
+    imageSrc: require("../assets/BallBlast.png"),
     MainComponent: () => (
       <LinkComponent
         link={"https://github.com/OmarAttaalla/AI-Learns-Ball-Blast"}
@@ -103,7 +103,7 @@ const projects = [
   },
   {
     title: "Visual Sorting Algorithms",
-    imageSrc: require("../images/Sort.png"),
+    imageSrc: require("../assets/Sort.png"),
     MainComponent: () => (
       <LinkComponent
         link={"./Sorting.html"}
@@ -117,7 +117,7 @@ const projects = [
   },
   {
     title: "RoBooks",
-    imageSrc: require("../images/RoBooks.png"),
+    imageSrc: require("../assets/RoBooks.png"),
     MainComponent: () => (
       <LinkComponent
         link={"https://learnrobooks.github.io/RoBooks/"}

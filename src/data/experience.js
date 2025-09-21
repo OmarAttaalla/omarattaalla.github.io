@@ -1,8 +1,8 @@
-import NNImage from '../images/NN.png';
-import ADRImage from '../images/ADR_Engineers.png';
-import ArcyncImage from '../images/arcync_logo.jpg';
-import DoDImage from '../images/DoD.png';
-import UCIImage from '../images/uci_logo.jpg';
+import NNImage from '../assets/NN.png';
+import ADRImage from '../assets/ADR_Engineers.png';
+import ArcyncImage from '../assets/arcync_logo.jpg';
+import DoDImage from '../assets/DoD.png';
+import UCIImage from '../assets/uci_logo.jpg';
 import LinkComponent from "../components/LinkComponent";
 
 const experience = [

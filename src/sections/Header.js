@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import PersonImage from '../images/person2.png'
+import PersonImage from '../assets/person2.png'
 import "./Header.css"
 import { useDarkMode } from "../context/DarkModeContext";
-import SunImage from '../images/sun.png'
-import MoonImage from '../images/moon.svg'
+import SunImage from '../assets/sun.png'
+import MoonImage from '../assets/moon.svg'
 
 export default function Header() {
     const { darkMode, toggleDarkMode } = useDarkMode();

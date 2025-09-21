@@ -1,6 +1,6 @@
 import "./Contact.css"
-import MailImage from "../images/mail.png"
-import GithubImage from "../images/github.png"
+import MailImage from "../assets/mail.png"
+import GithubImage from "../assets/github.png"
 import { useDarkMode } from "../context/DarkModeContext";
 
 export default function Contact() {
