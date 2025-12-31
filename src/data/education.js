@@ -14,9 +14,17 @@ import DistributedML from '../assets/Distributed ML.pdf';
 import DistributedMLImage from '../assets/Distributed ML-2.png';
 import Locks from '../assets/Locks.pdf';
 import LocksImage from '../assets/Locks-1.png';
+import RFlow from '../assets/Rectified Flow.pdf';
+import RFlowImage from '../assets/RFlow.png';
 
 
 const papers = [
+    {
+        title: "Beyond Euler: ODE Samplers for Rectified Flow Generative Models",
+        abstract: "Rectified flow (RF) models learn an ordinary differential equation (ODE) that transports Gaussian noise to data along nearly straight trajectories, and can therefore generate samples with far fewer function evaluations (NFEs) than traditional diffusion models. Once an RF vector field is trained, however, the choice of numerical ODE solver remains largely unexplored. In this work we fix a conditional rectified flow model trained on the EuroSAT remote-sensing dataset and study the sampling problem in isolation. We compare six explicit ODE solvers under a common experimental setting, measuring Fréchet Inception Distance (FID), effective NFEs, wall-clock time, and geometric properties of the trajectories. Results show that Euler is the cheapest but performs worst, AB2 and Midpoint clearly improve FID at comparable or moderately higher cost, and adaptive RK23 attains the best FID with an intermediate evaluation budget, outperforming even high-cost RK4. Our results suggest that simple Euler sampling is suboptimal for rectified flows and that multi-step or adaptive solvers provide a better trade-off.",
+        pdfUrl: RFlow,
+        previewImage: RFlowImage,
+    },
     {
         title: "Multiple Parallel Solutions to A* Search",
         abstract: "The A* search algorithm is a widely used method for pathfinding and graph traversal in robotics, autonomous systems, and optimization problems. However, its computational cost on large, uninformed graphs makes it a candidate for parallelization. In this paper, we explore two approaches to parallelizing A*: a centralized variant (SPA*) that employs a shared priority queue protected by locks, and a decentralized variant that distributes work across threads by assigning ownership of nodes through hashing. We present implementations of both algorithms, compare them against a standard single-threaded A* baseline, and evaluate performance under varying grid sizes and thread counts. Our experiments demonstrate that while both parallel implementations achieve significant speedups, the decentralized algorithm scales more effectively, achieving over 35× improvement compared to standard A* and roughly 2× improvement over the centralized approach. We also examine the effect of lock choice on performance, finding that CLH locks reduce contention in the centralized algorithm while spin locks perform best in the decentralized setting.",
@@ -69,7 +77,7 @@ const education = [
             <>
             <InfoBlock
                 title={"Relevant Coursework"}
-                subtitle={" - Advanced Algorithms, Advanced Data Structures, Principles of Scientific Computing, Machine Learning, Artificial Intelligence, Transaction Processing & Distributed Data Management, Distributed Systems, Computer Networks, Parallel Computing, "}
+                subtitle={" - Deep Generative Models, Advanced Algorithms, Advanced Data Structures, Principles of Scientific Computing, Machine Learning, Artificial Intelligence, Transaction Processing & Distributed Data Management, Distributed Systems, Computer Networks, Parallel Computing"}
             />
             <h2>Papers</h2>
             <div className="pdfs-container">
