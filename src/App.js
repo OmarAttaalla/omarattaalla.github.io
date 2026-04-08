@@ -1,3 +1,5 @@
+import React from "react";
+import { motion } from "framer-motion";
 import Introduction from "./sections/Introduction.js"
 import AnimationSection from "./sections/AnimationSection.js"
 import Header from "./sections/Header.js"
@@ -10,13 +12,20 @@ import { DarkModeProvider } from "./context/DarkModeContext.js";
 function App() {
   return (
     <DarkModeProvider>
-      <div className="IntroGrid">
+      <div className="App">
         <Header />
-        <Introduction />
-        <AnimationSection />
-        <Technologies />
-        <About />
-        <Contact />
+        <motion.main 
+          className="IntroGrid"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <Introduction />
+          <AnimationSection />
+          <Technologies />
+          <About />
+          <Contact />
+        </motion.main>
       </div>
     </DarkModeProvider>
   );
