@@ -1,4 +1,4 @@
-
+import "./ListBlock.css";
 
 export default function ListBlock({ items }) {
     return (
