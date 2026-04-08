@@ -3,7 +3,7 @@ import './InfoBlock.css';
 export default function InfoBlock({ title, subtitle }) {
     return (
         <div className="InfoBlock">
-            <h2 className="InfoTitle">{title}</h2>
+            <h3 className="InfoTitle">{title}</h3>
             {subtitle && <p className="InfoSubtitle">{subtitle}</p>}
         </div>
     );
