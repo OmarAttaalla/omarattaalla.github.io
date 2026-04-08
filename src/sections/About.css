@@ -1,42 +1,6 @@
-.subSubInfo {
-    font-weight: 300;
-    color: gray;
-    list-style-type: circle;
-    text-align: left;
-    margin-left: 10%;
-    margin-top: 0;
-    font-size: 20px;
-    background-color: transparent;
-}
-
-.AboutSubSection {
-    background-color: transparent;
+.AboutContainer {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    column-gap: 30px;
-    row-gap: 10px;
-    flex-wrap: wrap;
-}
-
-.Title {
-    background-color: transparent;
-    font-size: 40px;
-    font-weight: 600;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-}
-
-@media (max-width: 600px) {
-    .BoxTitle {
-        font-size: 30px;
-    }
-    .subSubInfo {
-        font-size: 15px;
-    }
-    .BoxContainer {
-        width: 90%;
-    }
 }

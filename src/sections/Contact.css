@@ -1,18 +1,85 @@
-#ContactContainer {
-    background-color: var(--background-15);
-    gap: 20px;
+.ContactSection {
+    background-color: var(--background);
+    text-align: center;
+    padding-bottom: 40px;
 }
 
-#ContactTitle {
-    font-size: 30px;
-    padding-top: 20px;
-    margin-left: 0;
+.ContactContainer {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.ContactItem {
-    width: 40px;
+.ContactDescription {
+    color: var(--foreground-muted);
+    font-size: 1.1rem;
+    margin-bottom: 48px;
+    line-height: 1.6;
 }
 
-.ContactImage {
-    width: 100%;
+.ContactLinks {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.ContactLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--foreground-muted);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.ContactLink:hover {
+    color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.ContactLink span {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.Footer {
+    border-top: 1px solid var(--border);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.Footer p {
+    font-size: 0.9rem;
+    color: var(--foreground-muted);
+}
+
+.ScrollToTop {
+    background-color: var(--background-alt);
+    border: 1px solid var(--border);
+    color: var(--foreground-muted);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ScrollToTop:hover {
+    background-color: var(--foreground);
+    color: var(--background);
+    border-color: var(--foreground);
+}
+
+@media (max-width: 480px) {
+    .ContactLinks {
+        gap: 20px;
+    }
 }
