@@ -16,8 +16,8 @@ const reactPlayerComponent = (videoUrl) => (
 );
 
 const imageSubComponent = (imageSrc) => (
-  <div className="ImageWrapper">
-    <img src={imageSrc} alt="" className="ProjectImage" />
+  <div className="ExpandedImageWrapper">
+    <img src={imageSrc} alt="" className="ProjectExpandedImage" />
   </div>
 );
 

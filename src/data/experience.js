@@ -3,9 +3,24 @@ import ADRImage from '../assets/ADR_Engineers.png';
 import ArcyncImage from '../assets/arcync_logo.jpg';
 import DoDImage from '../assets/DoD.png';
 import UCIImage from '../assets/uci_logo.jpg';
+import BoeingImage from '../assets/boeing.jpg';
 import LinkComponent from "../components/LinkComponent";
 
 const experience = [
+    {
+        title: "Boeing",
+        imageSrc: BoeingImage,
+        MainComponent: () => (
+            <LinkComponent
+                link={"https://www.boeing.com/"}
+                title={"Boeing"}
+                subtitle={"Programmer Analyst (December 2025 - Present)"}
+                description={[
+
+                ]}
+            />
+        ),
+    },
     {
         title: "U.S. Department of Defense",
         imageSrc: DoDImage,
@@ -13,7 +28,7 @@ const experience = [
             <LinkComponent
                 link={"https://www.defense.gov/"}
                 title={"U.S. Department of Defense"}
-                subtitle={"Discipline Engineer (January 2025 - Present)"}
+                subtitle={"Discipline Engineer (January 2025 - December 2025)"}
                 description={[
 
                 ]}

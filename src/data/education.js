@@ -74,24 +74,31 @@ const education = [
             />
         ),
         SubComponent: () => (
-            <>
-            <InfoBlock
-                title={"Relevant Coursework"}
-                subtitle={" - Deep Generative Models, Advanced Algorithms, Advanced Data Structures, Principles of Scientific Computing, Machine Learning, Artificial Intelligence, Transaction Processing & Distributed Data Management, Distributed Systems, Computer Networks, Parallel Computing"}
-            />
-            <h2>Papers</h2>
-            <div className="pdfs-container">
-                {papers.map(({ title, abstract, pdfUrl, previewImage }) => (
-                    <PdfContainer
-                        key={title}
-                        title={title}
-                        abstract={abstract}
-                        pdfUrl={pdfUrl}
-                        previewImage={previewImage}
-                    />
-                ))}
+            <div className="EducationDetails">
+                <div className="CourseworkSection">
+                    <h4 className="DetailsTitle">Relevant Coursework</h4>
+                    <p className="CourseworkList">
+                        Deep Generative Models, Advanced Algorithms, Advanced Data Structures, Principles of Scientific Computing, 
+                        Machine Learning, Artificial Intelligence, Transaction Processing & Distributed Data Management, 
+                        Distributed Systems, Computer Networks, Parallel Computing
+                    </p>
+                </div>
+
+                <div className="PapersSection">
+                    <h4 className="DetailsTitle">Papers</h4>
+                    <div className="pdfs-container">
+                        {papers.map(({ title, abstract, pdfUrl, previewImage }) => (
+                            <PdfContainer
+                                key={title}
+                                title={title}
+                                abstract={abstract}
+                                pdfUrl={pdfUrl}
+                                previewImage={previewImage}
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
-            </>
         ),
     },
     {
