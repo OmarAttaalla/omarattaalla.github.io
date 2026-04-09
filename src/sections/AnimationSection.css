@@ -1,10 +1,18 @@
-.SubSection {
-    background-color: transparent;
+.AnimationSection {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 60px 0;
+    background-color: var(--background);
 }
 
-.container {
-   width: 300px; 
+.LottieContainer {
+    width: 250px;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 20px var(--shadow-color));
+}
+
+.dark-mode .LottieContainer {
+    filter: invert(0.2) brightness(1.2);
 }

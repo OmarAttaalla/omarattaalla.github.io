@@ -1,47 +1,41 @@
-.CompEng {
-    font-size: 40px;
+.EducationSection {
+    background-color: var(--background-alt);
 }
 
-
-.UCRImage {
-    width: 150px;
-}
-
-.UCIImage {
-    width: 500px;
-    padding: 10px;
-}
-
-.UCIImageContainer {
+.EducationGrid {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
     align-items: center;
+}
+
+.EducationDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     width: 100%;
+    text-align: left;
 }
 
-@media (max-width: 600px) {
-    .CompEng {
-        font-size: 30px;
-    }
-    .UCIImage {
-        width: 250px;
-        padding: 10px;
-    }
+.DetailsTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 12px;
+    border-left: 4px solid var(--accent);
+    padding-left: 16px;
 }
 
-@media (max-width: 920px) {
-    .CompEng {
-        font-size: 30px;
-    }
-    .UCIImage {
-        width: 300px;
-        padding: 10px;
-    }
+.CourseworkList {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--foreground-muted);
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
 }
 
-@media (max-width: 500px) {
-    .UCIImage {
-        width: 150px;
-        padding: 10px;
-    }
+.PapersSection {
+    width: 100%;
 }

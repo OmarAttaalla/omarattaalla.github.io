@@ -1,29 +1,53 @@
-html, body {
-    margin: 0;
-    padding: 0;
+.TechnologiesSection {
+    background-color: var(--background-alt);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
-.TechSubSection {
+.TechGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.TechCard {
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 16px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--background15);
-    box-shadow: var(--shadow-color) 0px 2px 4px 0px;
-    width: 100%;
-    column-gap: 30px;
-    row-gap: 10px;
-    flex-wrap: wrap;
+    gap: 12px;
+    transition: all 0.2s ease;
 }
 
-.TechAnimation {
-    width: 200px;
-    height: 200px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.TechCard:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
 }
 
-.TechObject {
-    height: 70px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.TechIcon {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+}
+
+.TechName {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--foreground-muted);
+}
+
+.TechCard:hover .TechName {
+    color: var(--foreground);
+}
+
+@media (max-width: 480px) {
+    .TechGrid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 12px;
+    }
 }

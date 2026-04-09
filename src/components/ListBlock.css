@@ -1,0 +1,22 @@
+.ListBlock {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.ListItem {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--foreground-muted);
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.ListItem::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}

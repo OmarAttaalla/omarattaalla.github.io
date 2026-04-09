@@ -1,81 +1,134 @@
-.Link {
-    text-align: left;
-    width: 100%;
-}
-
-.InfoContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex: 1;
-}
-
 .BoxContainer {
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 48px;
+    width: 100%;
+    max-width: 1000px;
     display: flex;
-    gap: 20px;
-    background-color: var(--background-15);
-    box-shadow: var(--shadow-color) 0px 2px 4px 0px;
-    transition: box-shadow 0.3s ease;
-    padding: 50px;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    width: 60%;
-    margin-top: 20px;
-    align-items: center;
+    gap: 48px;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.ExpandedImageWrapper {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.ProjectExpandedImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.VideoWrapper {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    aspect-ratio: 16 / 9;
+    background-color: black;
+}
+
+.VideoWrapper > div {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .BoxContainer:hover {
-    box-shadow: var(--shadow-color-2) 0px 4px 8px 0px;
+    border-color: var(--foreground-muted);
+    box-shadow: var(--shadow);
+    transform: translateY(-4px);
 }
 
-.BoxTitle {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.content-box {
-    overflow: hidden;
-    transition: max-height 0.5s ease;
+.ImageWrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    padding: 12px;
+    background-color: var(--background-alt);
+    border: 1px solid var(--border);
+    flex-shrink: 0;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.arrow-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: var(--foreground-2);
-    margin-top: 10px;
-    width: 100%;
+.ImageWrapper.paper-aspect {
+    height: 190px;
+    width: 140px;
 }
 
 .projectImage {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    /* box-shadow: 0 6px 7px #c9c9c9; */
-    border: 1px solid var(--background-3);
-    flex-shrink: 0;
-    object-fit: cover;
-    padding: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: filter 0.3s ease;
 }
 
-.bottom-padding-zero {
-    padding-bottom: 0px;
+.InfoContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0; /* Prevents flex children from causing overflow/jumps */
 }
 
-@media (max-width: 600px) {
-    .boxItem {
-        flex-basis: 100%;
+.arrow-button {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--foreground-muted);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+    margin-top: 12px;
+}
+
+.arrow-button:hover {
+    background-color: var(--background-alt);
+    color: var(--foreground);
+    border-color: var(--foreground-muted);
+}
+
+.content-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .BoxContainer {
+        flex-direction: column;
+        padding: 30px;
+        gap: 24px;
+        align-items: center;
+        text-align: center;
     }
 
-    .projectImage {
-        height: auto;
+    .InfoContainer {
+        align-items: center;
+    }
+
+    .ImageWrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .arrow-button {
+        align-self: center;
     }
 }

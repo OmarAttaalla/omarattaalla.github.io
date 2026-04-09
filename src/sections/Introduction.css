@@ -1,55 +1,175 @@
-.PersonImageContainer {
+.HeroSection {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    background-color: transparent;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    background-color: var(--background);
 }
 
-.PersonImage {
-    width: 200px;
-    height: 200px;
-    background-color: transparent;
+.HeroContainer {
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 24px;
 }
 
-.MainIcon {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    background-color: transparent;
+.HeroContent {
+    flex: 1;
+    max-width: 600px;
+}
+
+.HeroGreeting {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .IntroTitle {
-    background-color: transparent;
-    font-size: 60px;
-    text-align: center;
-    margin-left: 30px;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+    color: var(--foreground);
 }
 
-.FlexContainer {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: transparent;
-
+.Divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin-bottom: 24px;
 }
 
 .SubInfo {
+    font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(94, 94, 94);
-    list-style-type: circle;
-    text-align: left;
-    margin-left: 10%;
-    margin-top: 0;
-    font-size: 30px;
-    background-color: transparent;
+    color: var(--foreground);
+    margin-bottom: 16px;
+    line-height: 1.3;
 }
 
+.HeroDescription {
+    font-size: 1.1rem;
+    color: var(--foreground-muted);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
 
-@media (max-width: 600px) {
-    .SubInfo {
-        font-size: 20px;
+.HeroCTA {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.PrimaryButton {
+    padding: 14px 28px;
+    background-color: var(--foreground);
+    color: var(--background);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.PrimaryButton:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.SecondaryButton {
+    padding: 14px 28px;
+    background-color: transparent;
+    color: var(--foreground);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.SecondaryButton:hover {
+    background-color: var(--background-alt);
+    border-color: var(--foreground-muted);
+}
+
+.PersonImageContainer {
+    flex: 0 0 400px;
+}
+
+.ImageFrame {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 20px 20px 60px var(--shadow), -20px -20px 60px var(--background);
+    border: 8px solid var(--background-alt);
+}
+
+.PersonImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s var(--transition-slow);
+}
+
+.PersonImage:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .IntroTitle {
+        font-size: 3.5rem;
+    }
+    
+    .PersonImageContainer {
+        flex: 0 0 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .HeroSection {
+        padding-top: 100px;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    .HeroContainer {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .HeroContent {
+        max-width: 100%;
+    }
+
+    .IntroTitle {
+        font-size: 2.5rem;
+    }
+
+    .Divider {
+        margin: 0 auto 24px;
+    }
+
+    .HeroCTA {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .PrimaryButton, .SecondaryButton {
+        width: 100%;
+    }
+
+    .PersonImageContainer {
+        flex: 0 0 280px;
+        width: 280px;
     }
 }

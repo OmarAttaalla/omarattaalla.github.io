@@ -1,35 +1,143 @@
-.pdf-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
-
 .pdfs-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-height: 400px;
-    overflow-y: auto;
+    gap: 32px;
+    width: 100%;
+    margin-top: 24px;
 }
 
-.pdf-header {
-    flex-grow: 1;
+.PaperCard {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    padding: 24px;
+    background-color: var(--background-alt);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    align-items: flex-start;
 }
 
-.pdf-viewer {
-    width: 300px;
-    border: 1px solid var(--background-2);
-    border-radius: 10px;
-    cursor: pointer;
+.PaperCard:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
 }
 
-.pdf-title {
+.PaperInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.PaperHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.PaperIcon {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.PaperTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
     color: var(--foreground);
+    text-decoration: none;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 1700px) {
-    .pdf-container {
-        flex-wrap: wrap;
+.PaperTitle:hover {
+    color: var(--accent);
+}
+
+.PaperLinkIcon {
+    opacity: 0.5;
+}
+
+.PaperAbstract {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--foreground-muted);
+    text-align: justify;
+}
+
+.PaperPreviewWrapper {
+    width: 140px;
+    height: 190px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.PaperPreview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.PaperPreviewWrapper:hover .PaperPreview {
+    transform: scale(1.05);
+}
+
+.PaperPreviewOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.PaperPreviewWrapper:hover .PaperPreviewOverlay {
+    opacity: 1;
+}
+
+.PaperPreviewOverlay span {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+    .PaperCard {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .PaperHeader {
+        justify-content: center;
+    }
+
+    .PaperTitle {
+        justify-content: center;
+    }
+
+    .PaperAbstract {
+        text-align: center;
+    }
+
+    .PaperPreviewWrapper {
+        width: 160px;
+        height: 220px;
     }
 }
